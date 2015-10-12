@@ -12,6 +12,7 @@ _unit = _this;
 if (isDedicated) exitWith{};
 
 waitUntil {(isPlayer _unit)};
+if (!local _unit) exitWith {};
 
 	0 setFog [.08,0.03,100];
 

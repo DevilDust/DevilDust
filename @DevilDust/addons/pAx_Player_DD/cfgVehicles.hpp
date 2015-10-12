@@ -27,7 +27,7 @@ class CfgVehicles
 		class EventHandlers
 		{
 			init = "(_this select 0) execVM ""\pAx_Base_DD\client\clientEH_init.sqf""";
-			respawn = init = "(_this select 0) execVM ""\pAx_Base_DD\client\clientEH_initBLU.sqf""";
+			respawn = "(_this select 0) execVM ""\pAx_Base_DD\client\clientEH_initBLU.sqf""";
 
 		};
 
@@ -55,7 +55,7 @@ class CfgVehicles
     		class EventHandlers
     		{
     			init = "(_this select 0) execVM ""\pAx_Base_DD\client\clientEH_init.sqf""";
-    			respawn = init = "(_this select 0) execVM ""\pAx_Base_DD\client\clientEH_initBLU.sqf""";
+    			respawn = "(_this select 0) execVM ""\pAx_Base_DD\client\clientEH_initBLU.sqf""";
 
 
     		};
@@ -84,7 +84,7 @@ class CfgVehicles
             		class EventHandlers
             		{
             			init = "(_this select 0) execVM ""\pAx_Base_DD\client\clientEH_init.sqf""";
-            			respawn = init = "(_this select 0) execVM ""\pAx_Base_DD\client\clientEH_initBLU.sqf""";
+            			respawn = "(_this select 0) execVM ""\pAx_Base_DD\client\clientEH_initBLU.sqf""";
 
             		};
 

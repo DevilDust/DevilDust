@@ -1,5 +1,0 @@
-///////<HEADER>///////
-prefix=pAx_LandItems_DevilDust
-Pbo Type is: Arma Addon
-Sha: '54802720239537F258528E120D26BF9A12E58DBC'
-//////</HEADER>//////

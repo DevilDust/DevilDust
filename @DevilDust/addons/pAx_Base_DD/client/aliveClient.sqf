@@ -9,7 +9,7 @@
 
 
 _player = _this select 0;
-
+if (!local _player) exitWith {};
 removeHeadgear _player;
 
 removeallweapons _player;

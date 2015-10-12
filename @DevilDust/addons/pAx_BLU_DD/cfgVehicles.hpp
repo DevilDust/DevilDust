@@ -16,9 +16,9 @@ class cfgVehicles
         faction = "DevilDust_BLU_Faction";
         side = 1;
      //   model = "\A3\characters_f_epc\Civil\c_journalist.p3d"; //Default NATO
-      //  uniformClass = "pAx_U_man_DEA_DD";
-      //  hiddenSelections[] = {"Camo"};
-      //  hiddenSelectionsTextures[] = {"\pAx_BLU_DD\data\pAx_U_C_dea_1_co.paa"};
+        uniformClass = "pAx_U_man_DEA_DD";
+        hiddenSelections[] = {"Camo"};
+        hiddenSelectionsTextures[] = {"\pAx_BLU_DD\data\pAx_U_C_dea_1_co.paa"};
         weapons[] = {"Throw","Put"};
         respawnWeapons[] = {"Throw","Put"};
         //magazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
