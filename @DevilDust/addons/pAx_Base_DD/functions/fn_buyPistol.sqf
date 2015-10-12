@@ -2,6 +2,8 @@
 
 
 _unit = _this select 0;
+ if (isDedicated) exitWith{};
+ if (!local _unit) exitWith{};
 
 _money = pAx_ClientMoney;
 if (_money > 199) then {

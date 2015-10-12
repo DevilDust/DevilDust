@@ -1,6 +1,8 @@
 
 
 _caller = _this select 1;
+if (isDedicated) exitWith{};
+if (!local _caller) exitWith{};
 _readyToCook = 0;
 _inventoryItems = [
                     'mhl_MoronSalt_DevilDust',

@@ -2,6 +2,8 @@
 _index = lbCurSel 1500;
 _unit = vehicle player;
 _pos = (getPosATL player);
+if (isDedicated) exitWith{};
+if (!local _unit) exitWith {};
 
 if (enableButton == 5) then {
 _null = [_unit, _pos] ExecVM "\pAx_Base_DD\client\BuildingLab.sqf";

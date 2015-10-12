@@ -9,6 +9,8 @@
  //private["_unit"];
 
  _unit = _this select 0;
+ if (isDedicated) exitWith{};
+ if (!local _unit) exitWith{};
 
    DRINK_AA_ID  = _unit
                        addAction

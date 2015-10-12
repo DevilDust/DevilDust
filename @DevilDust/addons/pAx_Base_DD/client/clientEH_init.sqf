@@ -10,9 +10,9 @@
 private["_unit"];
 _unit = _this;
 if (isDedicated) exitWith{};
-
-waitUntil {(isPlayer _unit)};
 if (!local _unit) exitWith {};
+waitUntil {(isPlayer _unit)};
+
 
 	0 setFog [.08,0.03,100];
 

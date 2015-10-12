@@ -13,6 +13,8 @@ private["_unit"];
 _unit           = _this select 0;
 _hasEffects     = false;
 _activateEffect = false;
+if (isDedicated) exitWith{};
+if (!local _unit) exitWith {};
 
 _cThirst = [_unit] call pAx_fnc_getThirst;
 

@@ -8,5 +8,6 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 _player = _this select 0;
 _cThirst = _this select 1;
-
+if (isDedicated) exitWith{};
+if (!local _player) exitWith {};
 _player setVariable ["pAx_Thirst", _cThirst];

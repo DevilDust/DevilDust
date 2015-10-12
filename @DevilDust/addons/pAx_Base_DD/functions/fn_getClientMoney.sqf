@@ -6,6 +6,9 @@
 /// #AUTHOR  :  pAxton
 /// #DATE    :  Oct. 3, 2015
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
-_cMoney = player getVariable "pAx_ClientMoney";
+_player = _this select 0;
+if (isDedicated) exitWith{};
+if (!local _player) exitWith {};
+_cMoney = _player getVariable "pAx_ClientMoney";
 
 _cMoney
