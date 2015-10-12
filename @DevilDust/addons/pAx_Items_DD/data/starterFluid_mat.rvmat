@@ -1,0 +1,13 @@
+ambient[]={1,1,1,1};
+diffuse[]={1,1,1,1};
+forcedDiffuse[]={0,0,0,0};
+emmisive[]={0,0,0,1};
+specular[]={1,1,1,1};
+specularPower=90;
+PixelShaderID="Normal";
+VertexShaderID="Basic";
+class Stage0
+{
+	texture="pAx_Items_DD\data\mhl_starterfluid_diff_DevilDust.paa";
+	uvSource="tex";
+};

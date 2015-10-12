@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="Devil Dust">
+    <Package name="Mission One">
+        <Container name="Feeling thirsty">
+            <Key ID="str_pAx_Thirsty">
+                <Original>You are Thirsty</Original>
+                <English>You are Thirsty</English>
+                <Czech>ano</Czech>
+                <French>oui</French>
+                <German>ja</German>
+                <Italian>sì</Italian>
+                <Polish>tak</Polish>
+                <Portuguese>sim</Portuguese>
+                <Russian>да</Russian>
+                <Spanish>sí</Spanish>
+            </Key>
+            <Key ID="str_myTag_No">
+                <Original>no</Original>
+            </Key>
+        </Container>
+        <Container name="Another Container">
+            <Key ID="str_myTag_another_key">
+                <Original></Original>
+            </Key>
+            <Key ID="str_myTag_formatted">
+                <Original>Hello, %1.</Original>
+            </Key>
+            <Key ID="str_myTag_structured">
+                <Original>Some text &lt;t color='%1'&gt;%2&lt;/t&gt;</Original>
+            </Key>
+        </Container>
+    </Package>
+</Project>

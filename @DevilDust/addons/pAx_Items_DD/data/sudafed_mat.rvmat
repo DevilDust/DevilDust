@@ -1,0 +1,14 @@
+ambient[]={1,1,1,1};
+diffuse[]={1,1,1,1};
+forcedDiffuse[]={0,0,0,0};
+emmisive[]={0,0,0,1};
+specular[]={0,0,0,1};
+specularPower=1;
+PixelShaderID="Normal";
+VertexShaderID="Basic";
+class Stage0
+{
+	texture="pAx_items_DD\data\sudafed_DIFF_512.paa";
+	uvSource="tex";
+	Filter="Trilinear";
+};

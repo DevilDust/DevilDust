@@ -1,0 +1,5 @@
+#include "cfgPatches.hpp"
+#include "defines.hpp"
+#include "dialogs.hpp"
+#include "cfgfunctions.hpp"
+#include "cfgVehicles.hpp"

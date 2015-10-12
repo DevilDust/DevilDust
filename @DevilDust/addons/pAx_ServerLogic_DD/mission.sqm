@@ -1,0 +1,407 @@
+version=12;
+class Mission
+{
+	addOns[]=
+	{
+		"pAx_Characters_F_MainPlayer",
+		"a3_map_altis"
+	};
+	addOnsAuto[]=
+	{
+		"pAx_Characters_F_MainPlayer",
+		"a3_map_altis"
+	};
+	randomSeed=2079995;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+	class Groups
+	{
+		items=1;
+		class Item0
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={21486.385,12.267989,10847.549};
+					id=0;
+					side="CIV";
+					vehicle="pAx_C_MainPlayer_1";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+	};
+	class Markers
+	{
+		items=43;
+		class Item0
+		{
+			position[]={3513.9304,8.4370451,12956.001};
+			name="a";
+			type="Empty";
+		};
+		class Item1
+		{
+			position[]={3765.0198,15.209961,13765.911};
+			name="a_1";
+			type="Empty";
+		};
+		class Item2
+		{
+			position[]={4151.8311,52.556427,11746.093};
+			name="a_2";
+			type="Empty";
+		};
+		class Item3
+		{
+			position[]={5091.8076,49.050194,11243.417};
+			name="a_3";
+			type="Empty";
+		};
+		class Item4
+		{
+			position[]={3621.4927,14.123945,10243.839};
+			name="a_4";
+			type="Empty";
+		};
+		class Item5
+		{
+			position[]={7211.7837,2.0918279,11055.908};
+			name="a_5";
+			type="Empty";
+		};
+		class Item6
+		{
+			position[]={9236.3584,15.75976,11916.569};
+			name="a_6";
+			type="Empty";
+		};
+		class Item7
+		{
+			position[]={10671.146,16.661846,12239.534};
+			name="a_7";
+			type="Empty";
+		};
+		class Item8
+		{
+			position[]={9246.6191,41.921139,8062.1812};
+			name="a_8";
+			type="Empty";
+		};
+		class Item9
+		{
+			position[]={11601.354,17.065233,9426.9102};
+			name="a_9";
+			type="Empty";
+		};
+		class Item10
+		{
+			position[]={10965.035,28.808559,13447.54};
+			name="a_10";
+			type="Empty";
+		};
+		class Item11
+		{
+			position[]={11764.448,12.736672,13690.947};
+			name="a_11";
+			type="Empty";
+		};
+		class Item12
+		{
+			position[]={11123.755,42.544514,14574.602};
+			name="a_12";
+			type="Empty";
+		};
+		class Item13
+		{
+			position[]={12543.314,14.054415,14362.622};
+			name="a_13";
+			type="Empty";
+		};
+		class Item14
+		{
+			position[]={12965.547,27.458755,15088.703};
+			name="a_14";
+			type="Empty";
+		};
+		class Item15
+		{
+			position[]={12340.555,22.628141,15732.297};
+			name="a_15";
+			type="Empty";
+		};
+		class Item16
+		{
+			position[]={12666.95,34.349998,16355.303};
+			name="a_16";
+			type="Empty";
+		};
+		class Item17
+		{
+			position[]={14522.684,22.883358,17631.082};
+			name="a_17";
+			type="Empty";
+		};
+		class Item18
+		{
+			position[]={14020.508,26.483503,18718.449};
+			name="a_18";
+			type="Empty";
+		};
+		class Item19
+		{
+			position[]={9472.7764,130.21924,20323.256};
+			name="a_19";
+			type="Empty";
+		};
+		class Item20
+		{
+			position[]={10295.39,127.19315,19064.764};
+			name="a_20";
+			type="Empty";
+		};
+		class Item21
+		{
+			position[]={4558.689,300.00012,21398.633};
+			name="a_21";
+			type="Empty";
+		};
+		class Item22
+		{
+			position[]={12820.188,43.435329,19641.939};
+			name="a_22";
+			type="Empty";
+		};
+		class Item23
+		{
+			position[]={11763.158,51.640892,18265.172};
+			name="a_23";
+			type="Empty";
+		};
+		class Item24
+		{
+			position[]={14624.661,47.888367,20783.34};
+			name="a_24";
+			type="Empty";
+		};
+		class Item25
+		{
+			position[]={16358.704,22.630394,17211.311};
+			name="a_25";
+			type="Empty";
+		};
+		class Item26
+		{
+			position[]={16664.172,17.508417,16106.732};
+			name="a_26";
+			type="Empty";
+		};
+		class Item27
+		{
+			position[]={17905.588,2.1639087,18143.988};
+			name="a_27";
+			type="Empty";
+		};
+		class Item28
+		{
+			position[]={18819.486,30.215822,16575.428};
+			name="a_28";
+			type="Empty";
+		};
+		class Item29
+		{
+			position[]={18143.109,25.981026,15262.596};
+			name="a_29";
+			type="Empty";
+		};
+		class Item30
+		{
+			position[]={20998.906,39.720165,16982.596};
+			name="a_30";
+			type="Empty";
+		};
+		class Item31
+		{
+			position[]={21395.424,19.717678,16362.938};
+			name="a_31";
+			type="Empty";
+		};
+		class Item32
+		{
+			position[]={23220.365,14.100488,19983.086};
+			name="a_32";
+			type="Empty";
+		};
+		class Item33
+		{
+			position[]={23982.52,14.580962,20142.781};
+			name="a_33";
+			type="Empty";
+		};
+		class Item34
+		{
+			position[]={25687.756,20.286276,21341.24};
+			name="a_34";
+			type="Empty";
+		};
+		class Item35
+		{
+			position[]={26997.742,19.944288,23232.457};
+			name="a_35";
+			type="Empty";
+		};
+		class Item36
+		{
+			position[]={19476.578,19.747726,15402.499};
+			name="a_36";
+			type="Empty";
+		};
+		class Item37
+		{
+			position[]={19397.771,38.671646,13256.494};
+			name="a_37";
+			type="Empty";
+		};
+		class Item38
+		{
+			position[]={16804.324,22.100582,12727.405};
+			name="a_38";
+			type="Empty";
+		};
+		class Item39
+		{
+			position[]={20270.115,52.336842,11681.822};
+			name="a_39";
+			type="Empty";
+		};
+		class Item40
+		{
+			position[]={20545.926,34.902534,8887.9453};
+			name="a_40";
+			type="Empty";
+		};
+		class Item41
+		{
+			position[]={20817.863,35.166492,6761.4263};
+			name="a_41";
+			type="Empty";
+		};
+		class Item42
+		{
+			position[]={21690.883,14.960005,7601.6899};
+			name="a_42";
+			type="Empty";
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"a3_map_altis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_altis"
+	};
+	randomSeed=13032070;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"a3_map_altis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_altis"
+	};
+	randomSeed=5748346;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"a3_map_altis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_altis"
+	};
+	randomSeed=12011897;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
