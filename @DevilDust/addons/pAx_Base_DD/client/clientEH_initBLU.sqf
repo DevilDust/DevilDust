@@ -11,6 +11,7 @@
 _unit = _this;
 if (isDedicated) exitWith{};
 waitUntil {(isPlayer _unit)};
+if (!local _player) exitWith {};
 _unit addVest "pAx_Vest_DevilDust";
 
 
