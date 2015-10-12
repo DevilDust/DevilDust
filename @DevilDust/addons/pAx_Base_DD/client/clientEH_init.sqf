@@ -7,7 +7,7 @@
 /// #AUTHOR  : pAxton
 /// #DATE    : Oct. 3, 2015
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
-private["_unit"];
+//private["_unit"];
 _unit = _this;
 if (isDedicated) exitWith{};
 if (!local _unit) exitWith {};
@@ -31,7 +31,7 @@ _unit addEventHandler ["InventoryOpened", {
         _statButton ctrlSetPosition  [0.570462 * safezoneW + safezoneX,0.782139 * safezoneH + safezoneY,0.12375 * safezoneW,0.033 * safezoneH];
         _statButton ctrlCommit 0;
         _statButton ctrlSetText "Check Status";
-        _statButton buttonSetAction "hintSilent format ['Money: %1 \n\n Hydration: %2 ',call pAx_fnc_getClientMoney, [_unit] call pAx_fnc_getThirst];";
+        _statButton buttonSetAction "hintSilent format ['Money: %1 \n\n Hydration: %2 ',[player] call pAx_fnc_getClientMoney, [player] call pAx_fnc_getThirst];";
     };
 }];
 

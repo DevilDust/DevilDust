@@ -28,8 +28,8 @@ class cfgVehicles
 		extCameraPosition[] = {0.35,-0.2,-0.4};
 		class EventHandlers
 		{
-			init = "(_this select 0) execVM ""\pAx_Base_DD\client\clientEH_initBLU.sqf""";
-			respawn = init = "(_this select 0) execVM ""\pAx_Base_DD\client\clientEH_initBLU.sqf""";
+			init = "( _this select 0) execVM ""\pAx_Base_DD\client\clientEH_initBLU.sqf""";
+			respawn =  "(_this select 0) execVM ""\pAx_Base_DD\client\clientEH_initBLU.sqf""";
             //TODO handle unit when shot
 		};
 
@@ -56,8 +56,8 @@ class cfgVehicles
     		extCameraPosition[] = {0.35,-0.2,-0.4};
     		class EventHandlers
     		{
-    			init = "(_this select 0) execVM ""\pAx_Base_DD\client\clientEH_initBLU.sqf""";
-    			respawn = init = "(_this select 0) execVM ""\pAx_Base_DD\client\clientEH_initBLU.sqf""";
+    			init = "( _this select 0) execVM ""\pAx_Base_DD\client\clientEH_initBLU.sqf""";
+    			respawn = "(_this select 0) execVM ""\pAx_Base_DD\client\clientEH_initBLU.sqf""";
     			// TODO handle getting shot
     		};
 
@@ -84,8 +84,8 @@ class cfgVehicles
             		extCameraPosition[] = {0.35,-0.2,-0.4};
             		class EventHandlers
             		{
-            			init = "(_this select 0) execVM ""\pAx_Base_DD\client\clientEH_initBLU.sqf""";
-            			respawn = init = "(_this select 0) execVM ""\pAx_Base_DD\client\clientEH_initBLU.sqf""";
+            			init = "( _this select 0) execVM ""\pAx_Base_DD\client\clientEH_initBLU.sqf""";
+            			respawn = "(_this select 0) execVM ""\pAx_Base_DD\client\clientEH_initBLU.sqf""";
             			// TODO handle getting shot
             		};
 

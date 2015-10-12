@@ -29,16 +29,16 @@ _unit addEventHandler ["InventoryOpened", {
         _statButton ctrlSetPosition  [0.570462 * safezoneW + safezoneX,0.782139 * safezoneH + safezoneY,0.12375 * safezoneW,0.033 * safezoneH];
         _statButton ctrlCommit 0;
         _statButton ctrlSetText "Check Status";
-        _statButton buttonSetAction "hintSilent format ['Money: %1 \n\n Hydration: %2 ',call pAx_fnc_getClientMoney, call pAx_fnc_getThirst];";
+        _statButton buttonSetAction "hintSilent format ['Money: %1 \n\n Hydration: %2 ',[player] call pAx_fnc_getClientMoney,[player] call pAx_fnc_getThirst];";
     };
 }];
 
- player setVariable ["pAx_ClientMoney", 0];
-player setVariable ["pAx_Thirst", 100];
-player setVariable ["pAx_Addiction", 0];
-player setVariable ["pAx_Addicted", 0];
+_unit setVariable ["pAx_ClientMoney", 0];
+_unit setVariable ["pAx_Thirst", 100];
+_unit setVariable ["pAx_Addiction", 0];
+_unit setVariable ["pAx_Addicted", 0];
 
-(vehicle player) addVest "pAx_Vest_DevilDust";
+(vehicle _unit) addVest "pAx_Vest_DevilDust";
 
 
 _null = [_unit] ExecVM "\pAx_Base_DD\Client\aliveClient.sqf";
