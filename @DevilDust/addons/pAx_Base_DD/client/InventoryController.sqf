@@ -1,5 +1,5 @@
 disableSerialization;
-
+_player = _this select 0;
 _listBoxArray = [0,1,2,3,4];
 _MethLabIndex = 0;
 _MethLab = "Meth Lab";
@@ -7,7 +7,7 @@ _inventoryItems = ['mhl_MoronSalt_DevilDust','mhl_StarterFluid_DevilDust','mhl_A
 _readyToMake = [0,0,0,0,0];
 enableButton = 0;
 _MoneyIndex = 1;
-_ClientMoney = [] call pAx_fnc_getClientMoney;
+_ClientMoney = [_player] call pAx_fnc_getClientMoney;
 _control = 1500;
 
 

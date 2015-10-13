@@ -34,6 +34,7 @@ class cfgFunctions
 				class addDrinkAction {};
 				class isAlive {};
 				class handleCivHit {};
+				class findSpawns {};
 			};
 	};
 	};

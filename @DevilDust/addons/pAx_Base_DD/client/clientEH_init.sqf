@@ -17,7 +17,7 @@ waitUntil {(isPlayer _unit)};
 	0 setFog [.08,0.03,100];
 
 
-_unit addEventHandler ["InventoryOpened", {
+player addEventHandler ["InventoryOpened", {
     _h = [] spawn {
         disableSerialization;
         waitUntil { !(isNull (findDisplay 602)) };
@@ -25,7 +25,7 @@ _unit addEventHandler ["InventoryOpened", {
         _labButton ctrlSetPosition  [0.367884 * safezoneW + safezoneX,0.782139 * safezoneH + safezoneY,0.12375 * safezoneW,0.033 * safezoneH];
         _labButton ctrlCommit 0;
         _labButton ctrlSetText "Lab Control";
-        _labButton buttonSetAction "hint 'button pressed'; createDialog 'pAx_InventoryDialog'; execVM '\pAx_Base_DD\client\InventoryController.sqf';";
+        _labButton buttonSetAction "hint 'button pressed'; createDialog 'pAx_InventoryDialog';[player] execVM '\pAx_Base_DD\client\InventoryController.sqf';";
 
         _statButton = (findDisplay 602) ctrlCreate ["RscButton",2008];
         _statButton ctrlSetPosition  [0.570462 * safezoneW + safezoneX,0.782139 * safezoneH + safezoneY,0.12375 * safezoneW,0.033 * safezoneH];
@@ -35,11 +35,12 @@ _unit addEventHandler ["InventoryOpened", {
     };
 }];
 
+
 _unit setVariable ["pAx_ClientMoney", 0];
  _unit setVariable ["pAx_Thirst", 100];
 _unit setVariable ["pAx_Addiction", 0];
 _unit setVariable ["pAx_Addicted", 0];
-
+[_unit] call pAx_fnc_findSpawns;
 _null = [_unit] ExecVM "\pAx_Base_DD\Client\aliveClient.sqf";
 
 

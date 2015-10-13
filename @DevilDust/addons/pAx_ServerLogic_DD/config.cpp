@@ -46,7 +46,7 @@ class cfgPatches
         	author = "pAxton";
         	scope = 2;
         	scopeCurator = 0;
-        	displayName = "";
+        	displayName = "mapInit";
         	icon = "iconObject_1x4";
         	class EventHandlers
                                     		{
@@ -54,6 +54,20 @@ class cfgPatches
                                     		};
 
         };
+        class pAx_PlayerSpawner_DevilDust : pAx_Server_DevilDust
+            	{
+            		mapSize = 2.05;
+                	author = "pAxton";
+                	scope = 2;
+                	scopeCurator = 0;
+                	displayName = "SpawnTrig";
+                	icon = "iconObject_1x4";
+                	class EventHandlers
+                                            		{
+                                            			init = "_this execVM '\pAx_ServerLogic_DD\scripts\playerSpawner_init.sqf'";
+                                            		};
+
+                };
         class Land_cargo_house_slum_F;
         class pAx_GunShop_DevilDust : Land_cargo_house_slum_F
             	{

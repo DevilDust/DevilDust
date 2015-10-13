@@ -32,4 +32,3 @@ while {alive _player} do
 
     };
 
-   diag_log ["Player Status", _status];

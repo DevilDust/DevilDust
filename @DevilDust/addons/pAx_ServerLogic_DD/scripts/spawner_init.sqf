@@ -13,11 +13,14 @@ spawnTrigger setVariable ["isTriggerActive", 0];
 spawnTrigger setTriggerArea [750,750,0,false];
 spawnTrigger setTriggerActivation ["EAST", "PRESENT", true];
 spawnTrigger setTriggerStatements ["this", "_script = [thisList , loca] execVM '\pAx_ServerLogic_DD\spawnCiv.sqf';", "terminate _script; spawnTrigger setVariable ['isTriggerActive', 0];"];
-countTrigger = createTrigger ["emptyDetector", getMarkerPos "a", true];
-countTriggerr setVariable ["isTriggerActive", 0];
-countTrigger setTriggerArea [750,750,0,false];
-countTrigger setTriggerActivation ["CIV", "PRESENT", true];
-countTrigger setTriggerStatements ["this", "_script = [thisList] execVM '\pAx_ServerLogic_DD\civCount.sqf';", ""];
+
+locb = (getMarkerPos "b");
+spawnTriggerZera = createTrigger ["emptyDetector", getMarkerPos "b", true];
+spawnTriggerZera setVariable ["isTriggerActive", 0];
+spawnTriggerZera setTriggerArea [750,750,0,false];
+spawnTriggerZera setTriggerActivation ["EAST", "PRESENT", true];
+spawnTriggerZera setTriggerStatements ["this", "_script = [thisList , locb] execVM '\pAx_ServerLogic_DD\spawnCiv.sqf';", "terminate _script; spawnTriggerZera setVariable ['isTriggerActive', 0];"];
+
 
 _milBuildarray = [
                      "Land_Cargo_HQ_V1_F",
@@ -33,7 +36,7 @@ _milBuildarray = [
 
 for [{_i = 0}, {_i < (count _milBuildarray)}, { _i = _i + 1}] do {
    _build = _milBuildarray select _i;
-   _buildFound = (position spawnTrigger) nearObjects [_build , 10000];
+   _buildFound = (position spawnTrigger) nearObjects [_build , 20000];
    {hideObjectGlobal _x} forEach _buildFound;
    {_sb = "pAx_GunShop_DevilDust" createVehicle getPos _x} forEach _buildFound;
 };

@@ -13,9 +13,6 @@ _caller = _this select 1;
 _ID = _this select 2;
 _args = _this select 3;
 
-_rdme = floor (random 10);
-
-
 
 //_target switchMove "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";
 
@@ -24,10 +21,12 @@ if ("mhl_Baggy_DevilDust" in (items player + assignedItems player)) then
     {
         _caller unassignItem "mhl_Baggy_DevilDust";
         _caller removeItem "mhl_Baggy_DevilDust";
-        pAx_ClientMoney = pAx_ClientMoney + 100;
+        _money = [_caller] call pAx_fnc_getClientMoney;
+        _newMoney = _money + 100;
+        [_caller, _newMoney] call pAx_fnc_setClientMoney;
         _target removeAction _ID;
     };
 
 sleep 10;
 
-//_target playMove "Acts_Abuse_Akhanteros";
+_target playMove "Acts_Abuse_Akhanteros";

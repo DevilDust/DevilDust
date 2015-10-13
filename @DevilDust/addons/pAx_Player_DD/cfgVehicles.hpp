@@ -26,8 +26,9 @@ class CfgVehicles
 		extCameraPosition[] = {0.35,-0.2,-0.4};
 		class EventHandlers
 		{
-			init = "( _this select 0) execVM ""\pAx_Base_DD\client\clientEH_init.sqf""";
+			//init = "(_this) execVM ""\pAx_Base_DD\client\clientEH_init.sqf""";
 			respawn = "( _this select 0) execVM ""\pAx_Base_DD\client\clientEH_init.sqf""";
+			hit = "[_this] call pAx_fnc_hanldeHit";
 
 		};
 
@@ -54,8 +55,9 @@ class CfgVehicles
     		extCameraPosition[] = {0.35,-0.2,-0.4};
     		class EventHandlers
     		{
-    			init = "( _this select 0) execVM ""\pAx_Base_DD\client\clientEH_init.sqf""";
+    			//init = "(_this) execVM ""\pAx_Base_DD\client\clientEH_init.sqf""";
     			respawn = "( _this select 0) execVM ""\pAx_Base_DD\client\clientEH_init.sqf""";
+    			hit = "[_this] call pAx_fnc_hanldeHit";
 
 
     		};
@@ -83,8 +85,9 @@ class CfgVehicles
             		extCameraPosition[] = {0.35,-0.2,-0.4};
             		class EventHandlers
             		{
-            			init = "( _this select 0) execVM ""\pAx_Base_DD\client\clientEH_init.sqf""";
+            			//init = "(_this) execVM ""\pAx_Base_DD\client\clientEH_init.sqf""";
             			respawn = "( _this select 0) execVM ""\pAx_Base_DD\client\clientEH_init.sqf""";
+            			hit = "[_this] call pAx_fnc_hanldeHit";
 
             		};
 

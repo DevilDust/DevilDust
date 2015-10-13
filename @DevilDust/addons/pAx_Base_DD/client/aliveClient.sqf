@@ -31,12 +31,9 @@ hintC_arr_EH = findDisplay 72 displayAddEventHandler ["unload", {
 	};
 }];
 };
-_cMoney = [_player,nil,nil] call pAx_fnc_handleFunds;
-_errorCheck = [_player,_cMoney, 100] call pAx_fnc_handleFunds;
-if (_errorCheck == "Error") then
-    {
-        diag_log format ["%1 failed to load Money at %2", _player, time];
-    };
+	0 setFog [.08,0.03,100];
+[_player, 100] call pAx_fnc_setClientMoney;
+
 
 pAx_Addiction = _player getVariable "pAx_Addiction";
 pAx_Addicted  = _player getVariable "pAx_Addicted";

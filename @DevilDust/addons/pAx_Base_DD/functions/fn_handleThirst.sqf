@@ -35,6 +35,7 @@ if (_hasEffects && _activateEffect) then
   };
 if ((_cThirst > 2) && _hasEffects) then
   {
+    uiSleep 3;
     playerWetEffect ppEffectEnable false;
     ppEffectDestroy playerWetEffect;
     0 setFog [0.08,0.03,100];
