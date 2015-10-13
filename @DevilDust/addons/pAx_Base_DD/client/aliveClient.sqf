@@ -18,7 +18,7 @@ removeallweapons _player;
 
 waitUntil {(diag_tickTime > 0)};
 [] spawn { sleep 0.5;
-"Welcome to Devil Dust" hintC [
+"Devil Dust" hintC [
 	"Elements in this mod are intended for adults.",
 	"Trying to recreate anything done in the mod in real life.",
 	"Will expose you and others around you to deadly gas.",
@@ -28,9 +28,11 @@ hintC_arr_EH = findDisplay 72 displayAddEventHandler ["unload", {
 	0 = _this spawn {
 		_this select 0 displayRemoveEventHandler ["unload", hintC_arr_EH];
 		hintSilent "";
+		titleText ["", ""];
 	};
 }];
 };
+
 	0 setFog [.08,0.03,100];
 [_player, 100] call pAx_fnc_setClientMoney;
 

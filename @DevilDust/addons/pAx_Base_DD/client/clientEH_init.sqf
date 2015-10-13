@@ -11,6 +11,8 @@
 _unit = _this;
 if (isDedicated) exitWith{};
 if (!local _unit) exitWith {};
+
+
 waitUntil {(isPlayer _unit)};
 
 
