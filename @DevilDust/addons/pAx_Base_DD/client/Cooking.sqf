@@ -1,6 +1,7 @@
 
 
 _caller = _this select 1;
+_spawnPos = _this select 3;
 if (isDedicated) exitWith{};
 if (!local _caller) exitWith{};
 _readyToCook = 0;
@@ -52,9 +53,19 @@ _cookInProgress = "SmokeShellPurple" createVehicle (position vehicle player);  _
 detach _cookInProgress;
 hint "Your Baggy will be ready in 20 sec";
 sleep 20;
-player additem "mhl_baggy_DevilDust";
-player additem "mhl_baggy_DevilDust";
-player additem "mhl_baggy_DevilDust";
+//player additem "mhl_baggy_DevilDust";
+//player additem "mhl_baggy_DevilDust";
+//player additem "mhl_baggy_DevilDust";
+
+
+   _loot = "groundweaponholder" createVehicle (_spawnPos);
+
+   _loot additemcargoglobal ["mhl_baggy_DevilDust",3];
+
+  // _loot setPos [(_position select 0),(_position select 1),((_position select 2)-.14)];
+
+
+
 ppEffectDestroy cnv;
 ppEffectDestroy radBlur;
 } else {

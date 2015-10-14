@@ -33,7 +33,7 @@ hintC_arr_EH = findDisplay 72 displayAddEventHandler ["unload", {
 }];
 };
 
-	0 setFog [.08,0.03,100];
+	0 setFog [100,100,100];
 [_player, 100] call pAx_fnc_setClientMoney;
 
 

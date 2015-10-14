@@ -17,4 +17,4 @@ _pos = getPos _unit;
 arrow =  "sign_arrow_green_f" createVehicle _pos;
 
 arrow attachto [_unit, [0, 3, 1] ];
- _unit addAction [ "release", "[_this select 0, arrow] call pAx_fnc_spawnBoxTruck;(_this select 0) removeAction (_this select 2)"];
+ _unit addAction [ "release", "[_this select 0, arrow] call pAx_fnc_spawnBoxTruck;(_this select 0) removeAction (_this select 2); arrow = nil;"];

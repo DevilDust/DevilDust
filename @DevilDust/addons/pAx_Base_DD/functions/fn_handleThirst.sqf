@@ -28,20 +28,20 @@ if (_activateEffect && !_hasEffects) then
 if (_hasEffects && _activateEffect) then
   {
     _activateEffect = false;
-    playerWetEffect ppEffectEnable true;
-    playerWetEffect ppEffectAdjust [.0001,.0002,.0001,.0001,.0001,.0001,.001,0,0,0,0,0,0,0,0];
+   // playerWetEffect ppEffectEnable true;
+    //playerWetEffect ppEffectAdjust [.0001,.0002,.0001,.0001,.0001,.0001,.001,0,0,0,0,0,0,0,0];
     systemChat ( localize "str_pAx_Thirsty" );
     0 setFog [0.9,0,700];
   };
 if ((_cThirst > 2) && _hasEffects) then
   {
     uiSleep 3;
-    playerWetEffect ppEffectEnable false;
-    ppEffectDestroy playerWetEffect;
+    //playerWetEffect ppEffectEnable false;
+    //ppEffectDestroy playerWetEffect;
     0 setFog [0.08,0.03,100];
     _hasEffects = false;
   };
-_cThirst = _cThirst - 0.01;
+_cThirst = _cThirst - 0.1;
 
 systemChat format ["Thirst: %1, HasEffect:%2", _cThirst, _hasEffects];
 _cThirst

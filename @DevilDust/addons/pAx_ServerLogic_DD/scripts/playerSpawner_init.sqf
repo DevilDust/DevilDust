@@ -6,7 +6,7 @@
  /// #AUTHOR  :  pAxton
  /// #DATE    :  Oct. 3, 2015
  ////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+0 setFog [.08,0.03,100];
 locspawn = (getMarkerPos "spawn");
 spawnTriggerPlayer = createTrigger ["emptyDetector", getMarkerPos "spawn", true];
 spawnTriggerPlayer setVariable ["isTriggerActive", 0];
