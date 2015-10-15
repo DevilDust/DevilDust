@@ -10,7 +10,7 @@
 //Class characters_f : Civil\config.bin{
 class CfgPatches
 {
-	class pAx_Characters_F_DrugUser
+	class pAx_DrugUser_DD
 	{
 		units[] = {"pAx_C_man_1","pAx_C_man_2","pAx_C_man_3"};
 		weapons[] = {};

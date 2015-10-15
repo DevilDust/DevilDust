@@ -1,7 +1,7 @@
 #include "BIS_AddonInfo.hpp"
 ////////////////////////////////////////////////////////////////////
 //Author: pAxton
-//  items config for DevilDust
+//  Land items config for DevilDust
 ////////////////////////////////////////////////////////////////////
 
 #define _ARMA_
@@ -9,7 +9,7 @@
 
 class cfgPatches
 	{
-    class pAx_Land_DevilDust
+    class pAx_LandItems_DD
     	{
     		units[] = {"pAx_Lab_DevilDust"};
     		weapons[] = {};

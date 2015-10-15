@@ -1,6 +1,6 @@
 class CfgPatches
 {
-    class pAx_BLU_DD
+    class pAx_Vehicles_DD
     {
         units[] = {"pAx_DEA_MRAP"};
         weapons[] = {};

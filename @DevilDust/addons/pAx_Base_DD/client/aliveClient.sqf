@@ -21,7 +21,7 @@ waitUntil {(diag_tickTime > 0)};
 "Devil Dust" hintC [
 	"Elements in this mod are intended for adults.",
 	"Trying to recreate anything done in the mod in real life.",
-	"Will expose you and others around you to deadly gas.",
+	"Will expose you and others around you to deadly fumes.",
 	"in other words... Don't try this at home"
 ];
 hintC_arr_EH = findDisplay 72 displayAddEventHandler ["unload", {
@@ -32,8 +32,9 @@ hintC_arr_EH = findDisplay 72 displayAddEventHandler ["unload", {
 	};
 }];
 };
-
+	enableRadio false;
 	0 setFog [100,100,100];
+	[] spawn { (findDisplay 46) displayAddEventHandler["KeyDown","_this call pAx_fnc_keyDownEvent"]; };
 [_player, 100] call pAx_fnc_setClientMoney;
 
 

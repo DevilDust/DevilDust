@@ -8,39 +8,64 @@
  ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 if (hasInterface) exitWith {};
 loca = (getMarkerPos "a");
-spawnTrigger = createTrigger ["emptyDetector", getMarkerPos "a", true];
+spawnTrigger = createTrigger ["emptyDetector", loca, true];
 spawnTrigger setVariable ["isTriggerActive", 0];
 spawnTrigger setTriggerArea [750,750,0,false];
 spawnTrigger setTriggerActivation ["EAST", "PRESENT", true];
 spawnTrigger setTriggerStatements ["this", "_script = [thisList , loca] execVM '\pAx_ServerLogic_DD\spawnCiv.sqf';", "terminate _script; spawnTrigger setVariable ['isTriggerActive', 0];"];
 
 locb = (getMarkerPos "b");
-spawnTriggerZera = createTrigger ["emptyDetector", getMarkerPos "b", true];
+spawnTriggerZera = createTrigger ["emptyDetector", locb, true];
 spawnTriggerZera setVariable ["isTriggerActive", 0];
 spawnTriggerZera setTriggerArea [750,750,0,false];
 spawnTriggerZera setTriggerActivation ["EAST", "PRESENT", true];
 spawnTriggerZera setTriggerStatements ["this", "_script = [thisList , locb] execVM '\pAx_ServerLogic_DD\spawnCiv.sqf';", "terminate _script; spawnTriggerZera setVariable ['isTriggerActive', 0];"];
 
+locc = (getMarkerPos "c");
+spawnTriggerAgiosDino = createTrigger ["emptyDetector", locc, true];
+spawnTriggerAgiosDino setVariable ["isTriggerActive", 0];
+spawnTriggerAgiosDino setTriggerArea [750,750,0,false];
+spawnTriggerAgiosDino setTriggerActivation ["EAST", "PRESENT", true];
+spawnTriggerAgiosDino setTriggerStatements ["this", "_script = [thisList , locc] execVM '\pAx_ServerLogic_DD\spawnCiv.sqf';", "terminate _script; spawnTriggerAgiosDino setVariable ['isTriggerActive', 0];"];
 
-_milBuildarray = [
-                     "Land_Cargo_HQ_V1_F",
-                     "Land_Cargo_HQ_V2_F",
-                     "Land_Cargo_HQ_V3_F",
-                     "Land_Cargo_Patrol_V1_F",
-                     "Land_Cargo_Patrol_V2_F",
-                     "Land_Cargo_Patrol_V3_F",
-                     "Land_Cargo_Tower_V1_F",
-                     "Land_Cargo_Tower_V2_F",
-                     "Land_Cargo_Tower_V3_F"
-                 ];
+locd = (getMarkerPos "d");
+spawnTriggerGalati = createTrigger ["emptyDetector", locd, true];
+spawnTriggerGalati setVariable ["isTriggerActive", 0];
+spawnTriggerGalati setTriggerArea [750,750,0,false];
+spawnTriggerGalati setTriggerActivation ["EAST", "PRESENT", true];
+spawnTriggerGalati setTriggerStatements ["this", "_script = [thisList , locd] execVM '\pAx_ServerLogic_DD\spawnCiv.sqf';", "terminate _script; spawnTriggerGalati setVariable ['isTriggerActive', 0];"];
 
-for [{_i = 0}, {_i < (count _milBuildarray)}, { _i = _i + 1}] do {
-   _build = _milBuildarray select _i;
-   _buildFound = (position spawnTrigger) nearObjects [_build , 20000];
-   {hideObjectGlobal _x} forEach _buildFound;
-   {_sb = "pAx_GunShop_DevilDust" createVehicle getPos _x} forEach _buildFound;
-};
+loce = (getMarkerPos "e");
+spawnTriggerKore = createTrigger ["emptyDetector", loce, true];
+spawnTriggerKore setVariable ["isTriggerActive", 0];
+spawnTriggerKore setTriggerArea [750,750,0,false];
+spawnTriggerKore setTriggerActivation ["EAST", "PRESENT", true];
+spawnTriggerKore setTriggerStatements ["this", "_script = [thisList , loce] execVM '\pAx_ServerLogic_DD\spawnCiv.sqf';", "terminate _script; spawnTriggerKore setVariable ['isTriggerActive', 0];"];
 
+locf = (getMarkerPos "f");
+spawnTriggerKavala = createTrigger ["emptyDetector", locf, true];
+spawnTriggerKavala setVariable ["isTriggerActive", 0];
+spawnTriggerKavala setTriggerArea [750,750,0,false];
+spawnTriggerKavala setTriggerActivation ["EAST", "PRESENT", true];
+spawnTriggerKavala setTriggerStatements ["this", "_script = [thisList , locf] execVM '\pAx_ServerLogic_DD\spawnCiv.sqf';", "terminate _script; spawnTriggerKavala setVariable ['isTriggerActive', 0];"];
+
+locg = (getMarkerPos "g");
+spawnTriggerNeri = createTrigger ["emptyDetector", locg, true];
+spawnTriggerNeri setVariable ["isTriggerActive", 0];
+spawnTriggerNeri setTriggerArea [750,750,0,false];
+spawnTriggerNeri setTriggerActivation ["EAST", "PRESENT", true];
+spawnTriggerNeri setTriggerStatements ["this", "_script = [thisList , locg] execVM '\pAx_ServerLogic_DD\spawnCiv.sqf';", "terminate _script; spawnTriggerNeri setVariable ['isTriggerActive', 0];"];
+
+loch = (getMarkerPos "h");
+spawnTriggerAthanos = createTrigger ["emptyDetector", loch, true];
+spawnTriggerAthanos setVariable ["isTriggerActive", 0];
+spawnTriggerAthanos setTriggerArea [750,750,0,false];
+spawnTriggerAthanos setTriggerActivation ["EAST", "PRESENT", true];
+spawnTriggerAthanos setTriggerStatements ["this", "_script = [thisList , loch] execVM '\pAx_ServerLogic_DD\spawnCiv.sqf';", "terminate _script; spawnTriggerAthanos setVariable ['isTriggerActive', 0];"];
+
+_posMarkerArray = [loca, locb, locc, locd, loce, locf, locg, loch];
+
+[_posMarkerArray] execVM "\pAx_ServerLogic_dd\scripts\mapSetup.sqf";
 
 
 if (isDedicated) then {

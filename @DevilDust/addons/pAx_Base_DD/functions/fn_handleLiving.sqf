@@ -24,6 +24,7 @@ while {alive _player} do
 
          sleep 5;
         _player removeAction DRINK_AA_ID;
+        _player removeAction SECURITY_AA_ID;
 
      if (!_status) then
         {

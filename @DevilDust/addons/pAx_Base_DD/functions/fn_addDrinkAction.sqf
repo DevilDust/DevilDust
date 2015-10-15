@@ -27,3 +27,16 @@
                                    "",
                                   "('mhl_WaterBottle_DevilDust' in (items player + assignedItems player) && _target == _this)"
                             ];
+    SECURITY_AA_ID = _unit
+                              addAction
+                                                   [
+                                                      "Set Up Camera",
+                                                          "[_this select 0, 'pAx_fnc_cameraSetup',true,true,false] call BIS_fnc_MP;
+                                                             (_this select 0) removeItem 'pAx_Camera_DevilDust';",
+                                                          "",
+                                                           0,
+                                                       false,
+                                                        true,
+                                                          "",
+                                                         "('pAx_Camera_DevilDust' in (items player + assignedItems player) && _target == _this)"
+                                                   ];

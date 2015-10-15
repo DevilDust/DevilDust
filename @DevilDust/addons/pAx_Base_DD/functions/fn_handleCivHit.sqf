@@ -10,7 +10,7 @@
 //surface: String - surface type struck
 //direct: Boolean - true if object was directly hit, false if it was hit by indirect/splash damage
 
-_target = _this select 0 select 0;
+_target = _this select 0;
 
 [_target] call pAx_fnc_targetHit;
 

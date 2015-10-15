@@ -255,12 +255,42 @@ class LabTitle: RscAtext
 class pAx_Cooking_Dialog	
 {
 	idd= 755;
+	type = ST_PICTURE;
 	movingenable=false;
 class RscAPicturePax: RscAPicture2
 {
-	text = "\pAx_Characters_F_MainPlayer\pAx_Characters_F_MainPlayer\metLabModPhototest.paa";
+	text = "\pAx_Base_DD\metLabModPhototest.paa";
 };
 
+};
+class RscTitles
+{
+	class ExampleTitle
+	{
+		idd = -1;
+		duration = 10;
+		class controls
+		{
+			class ExampleControl
+			{
+				idc = -1;
+				type = 0;
+				style = ST_PICTURE; //1 2 3...176
+				tileH = 2; //Tile Picture height (style = 144)
+				tileW = 5; //Tile Picture width (style = 144)
+				x = 0.25;
+				y = 0.25;
+				h = 0.5;
+				w = 0.5;
+				font = "EtelkaNarrowMediumPro";
+				sizeEx = 0.05;
+				colorBackground[] = {1,1,1,1}; //white background
+				colorText[] = {0.5,0.5,0.5,1}; //grey foreground
+				text = "\pAx_Base_DD\metLabModPhototest.paa";
+				lineSpacing = 1; //required for multi-line style
+			};
+		};
+	};
 };
 
 ////////////////////////////////////////////////////////

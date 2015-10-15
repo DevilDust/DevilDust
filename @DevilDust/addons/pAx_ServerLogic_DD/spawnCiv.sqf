@@ -44,6 +44,8 @@ _civUnitArray = [
 
 
 
+
+
 //{_loot = "groundweaponholder" createVehicle getPosATL (position _x); _loot addItem _itemArray select(floor random count _itemArray);} forEach _housearray;
 for [{_i = 0}, {_i < (count _houseArray)}, { _i = _i + 1}] do {
     _aHouse = _housearray select _i;

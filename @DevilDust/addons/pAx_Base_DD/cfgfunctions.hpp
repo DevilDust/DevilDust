@@ -35,6 +35,8 @@ class cfgFunctions
 				class isAlive {};
 				class handleCivHit {};
 				class findSpawns {};
+				class cameraSetup {};
+				class keyDownEvent {};
 			};
 	};
 	};

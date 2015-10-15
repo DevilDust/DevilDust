@@ -28,7 +28,7 @@ enum {
 class CfgPatches
 {
 	
-	class pAx_Items_DevilDust
+	class pAx_Items_DD
 	{
 		units[] = {};
 		weapons[] = {"mhl_MoronSalt_DevilDust","mhl_BatteryPackage_DevilDust","mhl_Baggy_DevilDust","mhl_Acetone_DevilDust", "mhl_StarterFluid_DevilDust","mhl_Sudafed_DevilDust","mhl_WaterBottle_DevilDust"};
@@ -60,7 +60,11 @@ class CfgWeapons
     	{
     		type = 201;
     	};
-	
+	class InventorySecurityCameraItem_Base_F: InventoryItem_Base_F
+        	{
+        		type = 201;
+
+        	};
 	class InventoryMoronSaltItem_Base_F: InventoryItem_Base_F
 	{
 		type = 201;
@@ -126,6 +130,13 @@ class CfgWeapons
 		type =619;
 		allowedSlots[] = {901};
 	};
+
+	class SecurityCameraKit: InventoryItem_Base_F
+	{
+		type =619;
+    	allowedSlots[] = {901};
+
+	};
 	
 	class SudafedItem: InventoryItem_Base_F
 	{
@@ -147,7 +158,30 @@ class CfgWeapons
     			mass = 8;
     		};
     	};
+	class pAx_Camera_DevilDust: ItemCore
+        	{
+        		scope = 2;
+        		displayName = "Security Camera Kit";
+        		picture = "";
+        		model = "\A3\Structures_F\Items\Luggage\Suitcase_F.p3d";
+        		descriptionShort = "";
+        		interactAction = 2;
+        		interactText = "";
+        		class ItemInfo: InventorySecurityCameraItem_Base_F
 
+        		{
+        			mass = 20;
+        			onMouseButtonDblClick = "systemChat 'bg dbl'";
+        		};
+        		class EventHandlers
+                            		{
+                            		//	init = "[_this] call pAx_fnc_cameraSetup";
+
+
+
+
+                            		};
+        	};
 
 	class mhl_MoronSalt_DevilDust: ItemCore
 	{  
@@ -217,7 +251,7 @@ class CfgWeapons
 		class ItemInfo: InventoryAcetoneItem_Base_F
 	
 		{
-			mass = 10;
+			mass = 8;
 		};
 	};
 	
