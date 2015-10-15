@@ -1,0 +1,17 @@
+dir = "@DevilDust";
+name = "DevilDust";
+picture = "metLabModPhototest.paa";
+actionName = "action";
+action = "";
+description = " a description";
+hideName = 0;
+hidePicture = 0;
+logo = "metLabModPhototest.paa";
+logoOver = "metLabModPhototest.paa";
+tooltip = "DevilDust Mod";
+tooltipOwned = "DevilDust Mod Owned!";
+overview = "DevilDust Mod for ArmA3. ";
+author = "pAxton";
+overviewPicture = "metLabModPhototest.paa";
+overviewText = "OV Tex";
+overviewFootnote = "OV foot note";
