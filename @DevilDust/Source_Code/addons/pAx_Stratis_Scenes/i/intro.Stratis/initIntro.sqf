@@ -3,6 +3,8 @@ off2 disableAI "MOVE";
 off2 switchMove "Acts_HeliCargoTalking_loop";
 off2 attachto [mrap, [1.2,1.5,-0.4]];
 off2 setDir 65;
+playSound3D ["A3\Sounds_F\ambient\sfx\single_sfx\fly_1.wss", campos];
+sleep 1;
 playSound3D ["A3\Sounds_F\arsenal\sfx\bullet_flyby\bullet_flyby9.wss", campos];
 
 fnc_pwrotate = {
@@ -63,7 +65,7 @@ _text = "pAx_Text_DevilDust" createVehicle [((_tp select 0)+3),((_tp select 1)),
 
 _text attachTo [off2_1, [-5,-6,1.1]];
 _text setDir 30;
-
+playSound3D ["a3\sounds_f\ambient\animals\dog4.wss", campos];
 
 //"AbdvPercMrunSnonWrflDf"
 
