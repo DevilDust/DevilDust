@@ -45,6 +45,21 @@ class cfgPatches
         	model = "\pAx_LandItems_DD\labPlaceHolder.p3d";
         	icon = "iconObject_1x4";
         };
+        class pAx_Text_DevilDust: Furniture_base_F
+            	{
+            		mapSize = 0.97;
+            		author = "pAxton";
+            		//_generalMacro = "Furniture_base_F";
+            		scope = 2;
+            		scopeCurator = 2;
+            		displayName = "Devil Text";
+            		picture = "\pAx_LandItems_DD\data\DevilText_co.paa";
+            		model = "\pAx_LandItems_DD\DevilText.p3d";
+            		icon = "iconObject";
+            		vehicleClass = "Furniture";
+            		destrType = "DestructNo";
+            		cost = 100;
+            	};
 
 
 };

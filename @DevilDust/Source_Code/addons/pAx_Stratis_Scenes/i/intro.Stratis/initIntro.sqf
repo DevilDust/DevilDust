@@ -3,6 +3,8 @@ off2 disableAI "MOVE";
 off2 switchMove "Acts_HeliCargoTalking_loop";
 off2 attachto [mrap, [1.2,1.5,-0.4]];
 off2 setDir 65;
+
+
 fnc_pwrotate = {
     private ["_turntable","_holder","_time","_dir"];
     _turntable = createVehicle [
@@ -55,7 +57,9 @@ fnc_pwrotate = {
 
 h = getMarkerPos "a";
 
+_tp = position mrap;
 
+_ts = "pAx_Text_DevilDust" createVehicle [((_tp select 0)-2),((_tp select 1)+2),( _tp select 2)];
 
 
 
@@ -64,6 +68,7 @@ _pos = position campos;
 
 
 _camera = "camera" camCreate [(_pos select 0),(_pos select 1), ((_pos select 2)+0.9)] ;
+//_camera cameraEffect ["internal","back"];
 _camera cameraEffect ["internal","back"];
 
 0 setFog [0,0,0];
@@ -80,7 +85,11 @@ _null = [
     "mhl_sudafed_devildust"
 ] spawn fnc_pwrotate;
 sleep 2;
-
+playSound3D ["A3\Sounds_F\arsenal\sfx\bullet_flyby\bullet_flyby10.wss", campos];
+sleep .1;
+playSound3D ["A3\Sounds_F\arsenal\sfx\bullet_flyby\bullet_flyby4.wss", campos];
+sleep .1;
+playSound3D ["A3\Sounds_F\arsenal\sfx\bullet_flyby\bullet_flyby9.wss", campos];
 off switchMove "Acts_AidlPercMstpSlowWrflDnon_warmup05";
 
 sleep 14.9;
