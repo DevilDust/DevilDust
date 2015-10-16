@@ -3,7 +3,7 @@ off2 disableAI "MOVE";
 off2 switchMove "Acts_HeliCargoTalking_loop";
 off2 attachto [mrap, [1.2,1.5,-0.4]];
 off2 setDir 65;
-
+playSound3D ["A3\Sounds_F\arsenal\sfx\bullet_flyby\bullet_flyby9.wss", campos];
 
 fnc_pwrotate = {
     private ["_turntable","_holder","_time","_dir"];
@@ -57,24 +57,28 @@ fnc_pwrotate = {
 
 h = getMarkerPos "a";
 
-_tp = position mrap;
+_tp = getMarkerPos "t";
 
-_ts = "pAx_Text_DevilDust" createVehicle [((_tp select 0)-2),((_tp select 1)+2),( _tp select 2)];
+_text = "pAx_Text_DevilDust" createVehicle [((_tp select 0)+3),((_tp select 1)),(( _tp select 2)+8)];
+
+_text attachTo [off2_1, [-5,-6,1.1]];
+_text setDir 30;
 
 
+//"AbdvPercMrunSnonWrflDf"
 
 _pos = position campos;
 
 
-
+//_lamp = "Land_LampAirport_F" createVehicle [(_pos select 0),(_pos select 1), ((_pos select 2)-2.9)] ;
 _camera = "camera" camCreate [(_pos select 0),(_pos select 1), ((_pos select 2)+0.9)] ;
 //_camera cameraEffect ["internal","back"];
 _camera cameraEffect ["internal","back"];
 
 0 setFog [0,0,0];
-_camera camPrepareTarget position off;
+_camera camPrepareTarget position mrap;
 
-cutRsc ["ExampleTitle","PLAIN"];
+off switchMove "Acts_AidlPercMstpSlowWrflDnon_warmup05";
 
 _camera camPrepareFOV 1;
 _camera camCommitPrepared 0;
@@ -86,11 +90,9 @@ _null = [
 ] spawn fnc_pwrotate;
 sleep 2;
 playSound3D ["A3\Sounds_F\arsenal\sfx\bullet_flyby\bullet_flyby10.wss", campos];
-sleep .1;
+sleep 5;
+
 playSound3D ["A3\Sounds_F\arsenal\sfx\bullet_flyby\bullet_flyby4.wss", campos];
-sleep .1;
-playSound3D ["A3\Sounds_F\arsenal\sfx\bullet_flyby\bullet_flyby9.wss", campos];
-off switchMove "Acts_AidlPercMstpSlowWrflDnon_warmup05";
 
 sleep 14.9;
 

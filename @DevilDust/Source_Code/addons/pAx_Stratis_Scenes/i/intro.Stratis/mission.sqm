@@ -23,7 +23,7 @@ class Mission
 		year=2035;
 		month=7;
 		day=6;
-		hour=12;
+		hour=6;
 		minute=0;
 		startFogDecay=0.013;
 		forecastFogDecay=0.013;
@@ -47,31 +47,31 @@ class Intro
 		"a3_characters_f",
 		"pAx_BLU_DD",
 		"A3_Modules_F",
+		"pAx_Player_DD",
 		"pAx_Vehicles_DD",
 		"a3_map_stratis"
 	};
 	randomSeed=16717108;
 	class Intel
 	{
-		timeOfChanges=1800.0002;
-		startWeather=0.30000001;
-		startWind=0.1;
-		startWaves=0.1;
-		forecastWeather=0.30000001;
-		forecastWind=0.1;
-		forecastWaves=0.1;
-		forecastLightnings=0.1;
+		startWeather=0;
+		startWind=0.099999994;
+		startWaves=0.099999994;
+		forecastWeather=0;
+		forecastWind=0.099999994;
+		forecastWaves=0.099999994;
+		forecastLightnings=0.099999994;
 		year=2035;
 		month=7;
-		day=6;
-		hour=12;
+		day=18;
+		hour=6;
 		minute=0;
 		startFogDecay=0.013;
 		forecastFogDecay=0.013;
 	};
 	class Groups
 	{
-		items=4;
+		items=6;
 		class Item0
 		{
 			side="WEST";
@@ -84,10 +84,8 @@ class Intro
 					id=0;
 					side="WEST";
 					vehicle="B_Soldier_F";
-					player="PLAYER COMMANDER";
 					leader=1;
 					skill=0.60000002;
-					init="_n = execVM ""initIntro.sqf"";";
 				};
 			};
 		};
@@ -99,8 +97,8 @@ class Intro
 				items=1;
 				class Item0
 				{
-					position[]={3153.5835,3.5629261,6011.0469};
-					azimut=-51.890701;
+					position[]={3053.8999,12.08338,6107.1035};
+					azimut=46.599186;
 					id=1;
 					side="WEST";
 					vehicle="pAx_blu_1_DD";
@@ -119,7 +117,8 @@ class Intro
 				items=1;
 				class Item0
 				{
-					position[]={3149.9092,3.779392,6015.3965};
+					position[]={3062.7046,12.93245,6109.1313};
+					azimut=98.489792;
 					id=2;
 					side="LOGIC";
 					vehicle="LocationBase_F";
@@ -137,8 +136,8 @@ class Intro
 				items=1;
 				class Item0
 				{
-					position[]={3154.9351,3.5550158,6012.0352};
-					azimut=-0.57493502;
+					position[]={3054.6816,12.05135,6105.624};
+					azimut=97.914856;
 					id=3;
 					side="WEST";
 					vehicle="pAx_blu_2_DD";
@@ -149,15 +148,110 @@ class Intro
 				};
 			};
 		};
+		class Item4
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3089.0457,22.727276,6122.0562};
+					azimut=98.489792;
+					id=4;
+					side="EAST";
+					vehicle="pAx_man_magpul_DD";
+					leader=1;
+					skill=0.60000002;
+					text="runner";
+					init="this setCaptive true;";
+				};
+			};
+			class Waypoints
+			{
+				items=4;
+				class Item0
+				{
+					position[]={3049.3965,21.747183,6146.7471};
+					speed="FULL";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={3033.4097,20.141653,6143.0229};
+					speed="FULL";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item2
+				{
+					position[]={3024.5664,11.186993,6087.5508};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item3
+				{
+					position[]={3020.593,14.732184,6124.748};
+					type="CYCLE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item5
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3053.7048,11.899256,6076.0962};
+					azimut=-11.7742;
+					id=5;
+					side="WEST";
+					vehicle="pAx_blu_3_DD";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+					text="off2_1";
+					init="this allowdamage false; this addvest ""pax_vest_devildust""; this addWeapon ""arifle_MX_Black_F"";";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3055.7371,14.924236,6090.7446};
+					idStatic=69396;
+					idObject=-1748828396;
+					housePos=3;
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
 		items=1;
 		class Item0
 		{
-			position[]={3157.5779,3.5081744,6009.8027};
-			azimut=277.48099;
-			id=4;
+			position[]={3052.0835,12.03,6103.3403};
+			azimut=375.97067;
+			id=6;
 			side="EMPTY";
 			vehicle="pAx_DEA_MRAP";
 			skill=0.60000002;
@@ -166,18 +260,27 @@ class Intro
 	};
 	class Markers
 	{
-		items=2;
+		items=3;
 		class Item0
 		{
-			position[]={3150.0137,3.7634962,6014.9624};
+			position[]={3062.2566,12.889333,6109.0977};
 			name="a";
 			type="Empty";
+			angle=98.489792;
 		};
 		class Item1
 		{
-			position[]={3150.4751,3.7128234,6013.6963};
+			position[]={3060.9373,12.713412,6108.8252};
 			name="b";
 			type="Empty";
+			angle=98.489792;
+		};
+		class Item2
+		{
+			position[]={3031.3989,12.175195,6107.0166};
+			name="t";
+			type="Empty";
+			angle=345.47629;
 		};
 	};
 };
