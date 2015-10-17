@@ -10,7 +10,6 @@ class cfgFunctions
 				class hintTest {};
 				class ftl_loadout {};
 				class stlpainKillers{};
-				class playerInv {};
 				class buyPistol {};
 				class buyBoxTruck {};
 				class spawnBoxTruck {};
