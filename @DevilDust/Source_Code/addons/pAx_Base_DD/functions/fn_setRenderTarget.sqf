@@ -8,8 +8,8 @@
 
         // [[_camera],"fnc_pickUpCamera"] call BIS_fnc_MP;
         // [[_unit],'fnc_dropCamera'] call BIS_fnc_MP;
-        [_camera] spawn fnc_pickUpCamera;
-        [_unit] spawn fnc_dropCamera;
+        [_camera] spawn pAx_fnc_pickUpCamera;
+        [_unit] spawn pAx_fnc_dropCamera;
         _cam = "camera" camCreate [0,0,0];
         _cam cameraEffect ["Internal", "Back", "uavrtt"];
 
