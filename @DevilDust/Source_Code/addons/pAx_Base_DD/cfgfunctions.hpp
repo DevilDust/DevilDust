@@ -36,6 +36,9 @@ class cfgFunctions
 				class findSpawns {};
 				class cameraSetup {};
 				class keyDownEvent {};
+				class setRenderTarget {};
+				class dropCamera {};
+				class pickUpCamera {};
 			};
 	};
 	};

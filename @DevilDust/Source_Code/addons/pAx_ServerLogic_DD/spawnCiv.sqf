@@ -12,11 +12,11 @@
 
 
 
-//hint "has triggered " + str(_i);
+
 _unit = _this select 0 select 0;
 _pos = _this select 1;
 
-_housearray = (_pos) nearObjects ["House", 1500];
+_housearray = (_pos) nearObjects ["House", 700];
 
 
 
@@ -45,28 +45,27 @@ _house3 = _housearray select floor random count _housearray;
 _grp = createGroup west;
 _grp2 = createGroup west;
 _grp3 = createGroup west;
-_posinit = position _house;
-_posinit2 = position _house2;
-_posinit3 = position _house3;
-
+_aposinit = position _house;
+_aposinit2 = position _house2;
+_aposinit3 = position _house3;
 
 _classname = DD_DRUGUSERLIST call BIS_fnc_selectRandom;
 _classname2 = DD_DRUGUSERLIST call BIS_fnc_selectRandom;
 _classname3 = DD_DRUGUSERLIST call BIS_fnc_selectRandom;
-_unitArray = [
-_classname createUnit [_posinit, _grp, ""],
-_classname2 createUnit [_posinit, _grp, ""],
-_classname3 createUnit [_posinit, _grp, ""],
-_classname createUnit [_posinit, _grp, ""],
-_classname2 createUnit [_posinit2, _grp2, ""],
-_classname createUnit [_posinit2, _grp2, ""],
-_classname3 createUnit [_posinit2, _grp2, ""],
-_classname createUnit [_posinit2, _grp2, ""],
-_classname2 createUnit [_posinit3, _grp3, ""],
-_classname3 createUnit [_posinit3, _grp3, ""],
-_classname2 createUnit [_posinit3, _grp3, ""],
-_classname createUnit [_posinit3, _grp3, ""]
-];
+
+_classname createUnit [_aposinit, _grp, ""];
+_classname2 createUnit [_aposinit, _grp, ""];
+_classname3 createUnit [_aposinit, _grp, ""];
+_classname createUnit [_aposinit, _grp, ""];
+_classname2 createUnit [_aposinit2, _grp2, ""];
+_classname createUnit [_aposinit2, _grp2, ""];
+_classname3 createUnit [_aposinit2, _grp2, ""];
+_classname createUnit [_aposinit2, _grp2, ""];
+_classname2 createUnit [_aposinit3, _grp3, ""];
+_classname3 createUnit [_aposinit3, _grp3, ""];
+_classname2 createUnit [_aposinit3, _grp3, ""];
+_classname createUnit [_aposinit3, _grp3, ""];
+
 _wp = _grp addWaypoint [ getPos _unit, 110];
 _wp setWaypointSpeed "LIMITED";
 _wp setWaypointType "DISMISS";
@@ -79,6 +78,6 @@ _wp setWaypointType "DISMISS";
 
 
 
-{deleteVehicle _x} forEach units _grp;
-{deleteVehicle _x} forEach units _grp2;
-{deleteVehicle _x} forEach units _grp3;
+//{deleteVehicle _x} forEach units _grp;
+//{deleteVehicle _x} forEach units _grp2;
+//{deleteVehicle _x} forEach units _grp3;

@@ -5,9 +5,7 @@ DD_SPAWNLOOT = [
                     "mhl_acetone_DevilDust",
                     "mhl_starterfluid_DevilDust",
                     "mhl_WaterBottle_DevilDust",
-                    "pAx_U_man_green_DD",
-                    "pAx_U_man_magpul_DD",
-                    "pAx_U_man_boston_DD"
+                    "pAx_Camera_DevilDust"
               ];
 
 DD_DRUGUSERLIST = [

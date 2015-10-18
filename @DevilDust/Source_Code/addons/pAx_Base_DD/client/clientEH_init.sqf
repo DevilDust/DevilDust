@@ -14,7 +14,9 @@ if (!local _unit) exitWith {};
 
 
 waitUntil {(isPlayer _unit)};
-
+enableRadio false;
+enableSentences false;
+_unit setVariable ["BIS_noCoreConversations", true];
 
 	0 setFog [.08,0.03,100];
 
