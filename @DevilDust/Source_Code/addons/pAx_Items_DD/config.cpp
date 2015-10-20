@@ -171,16 +171,16 @@ class CfgWeapons
 
         		{
         			mass = 20;
-        			onMouseButtonDblClick = "systemChat 'bg dbl'";
+						class EventHandlers
+                                                		{
+                                                		//	init = "[_this] call pAx_fnc_cameraSetup";
+                    										onMouseButtonDblClick = "systemChat 'bg dbl'";
+
+
+
+                                                		};
         		};
-        		class EventHandlers
-                            		{
-                            		//	init = "[_this] call pAx_fnc_cameraSetup";
 
-
-
-
-                            		};
         	};
 
 	class mhl_MoronSalt_DevilDust: ItemCore
