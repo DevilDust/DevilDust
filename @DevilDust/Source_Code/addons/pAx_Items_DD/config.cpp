@@ -143,6 +143,22 @@ class CfgWeapons
 		type =619;
 		allowedSlots[] = {901};
 	};
+
+	class nhl_ToolBox_DevilDust : ItemCore
+		{
+					scope = 2;
+            		displayName = "Tool Box";
+            		picture = "\pAx_Items_DD\data\UI\mhl_gear_MortonSalt_DevilDust";
+            		model = "\pAx_Items_DD\mhl_ToolBox";
+            		descriptionShort = "I'm Thirsty";
+            		interactAction = 2;
+            		interactText = "DRINK";
+            		class ItemInfo: InventoryWaterBottleItem_Base_F
+
+            		{
+            			mass = 8;
+            		};
+		};
 	class mhl_WaterBottle_DevilDust: ItemCore
     	{
     		scope = 2;
