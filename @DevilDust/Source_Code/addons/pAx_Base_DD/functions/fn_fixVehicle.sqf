@@ -10,8 +10,12 @@ if (isNil {_car})
     exitWith {};
 
 
-if ("mhl_toolBoxNew_DevilDust" in (items player)) then
+if ("mhl_ToolBoxNew_DevilDust" in (items player)) then
 {
+     if (player in _car ) exitWith
+        {
+           hint "Get out the Car";
+        };
     if (_partRef == "lf") then
         {
            _car setHitPointDamage ["hitLFWheel",0];
