@@ -143,6 +143,19 @@ class CfgWeapons
 		type =619;
 		allowedSlots[] = {901};
 	};
+		class mhl_TurboBox_DevilDust : ItemCore
+    		{
+    					scope = 2;
+                		displayName = "Turbo";
+                		picture = "\pAx_Items_DD\data\UI\mhl_gear_MortonSalt_DevilDust";
+                		model = "\pAx_Items_DD\turboBox";
+                		descriptionShort = "You need tools for this";
+                		class ItemInfo: InventoryWaterBottleItem_Base_F
+
+                		{
+                			mass = 8;
+                		};
+    		};
 
 	class mhl_ToolBox_DevilDust : ItemCore
 		{
