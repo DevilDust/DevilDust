@@ -1,5 +1,5 @@
 
-
+_lab = _this select 0;
 _caller = _this select 1;
 _spawnPos = _this select 3;
 if (isDedicated) exitWith{};
@@ -59,6 +59,8 @@ sleep 20;
 
 
    _loot = "groundweaponholder" createVehicle (_spawnPos);
+
+   _loot attachto [_lab, [0,0,0]];
 
    _loot additemcargoglobal ["mhl_baggy_DevilDust",3];
 

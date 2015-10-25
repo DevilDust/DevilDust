@@ -2,7 +2,7 @@
  /// #FILENAME:  fn_addDrinkAction.sqf
  /// #PARAMS  :  0 - Player
  /// #EXECUTE :  CALL used throughout Mod
- /// #PURPOSE :  Add or Remove Drink Action and hanlde the act of drinking
+ /// #PURPOSE :  Add or Remove Drink Action and handle the act of drinking
  /// #AUTHOR  :  pAxton
  /// #DATE    :  Oct. 3, 2015
  ////////////////////////////////////////////////////////////////////////////////////////////////////////////

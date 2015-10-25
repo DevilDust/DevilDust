@@ -10,5 +10,5 @@
                                     false,
                                      true,
                                        "",
-                                      "((_this select 0) getVariable 'inHands') == true)"
+                                      "(player getVariable 'inHands') == true)"
                                 ];
