@@ -108,13 +108,14 @@ class pAx_ToolBox_dialog
 	class pAx_Frame: RscAFrame
 	{
 		idc = 2800;
-		text = "Load Up"; //--- ToDo: Localize;
+		text = "Tool Box"; //--- ToDo: Localize;
 		x = 0.420672 * safezoneW + safezoneX;
 		y = 0.227286 * safezoneH + safezoneY;
 		w = 0.163062 * safezoneW;
 		h = 0.4796 * safezoneH;
 		colorBackground[] = {1,1,1,1};
 		colorActive[] = {1,1,1,1};
+
 	};
 	class pAx_Button: RscAButton
 	{
@@ -124,7 +125,7 @@ class pAx_ToolBox_dialog
 		y = 0.28371 * safezoneH + safezoneY;
 		w = 0.145434 * safezoneW;
 		h = 0.0470196 * safezoneH;
-		action = "closedialog 0;";
+		action = "closeDialog 0; ['lf'] call pAx_fnc_fixVehicle";
 	};
 	class pAx_button1: RscAButton
 	{
@@ -134,26 +135,27 @@ class pAx_ToolBox_dialog
 		y = 0.340133 * safezoneH + safezoneY;
 		w = 0.145434 * safezoneW;
 		h = 0.0470196 * safezoneH;
-		action = "closedialog 0;";
+		action = "closeDialog 0; ['rf'] call pAx_fnc_fixVehicle";
 	};
 	class pAx_button3: RscAButton
 	{
 		idc = 2602;
-		text = "Buy Box Truck"; //--- ToDo: Localize;
+		text = "LR Wheel"; //--- ToDo: Localize;
 		x = 0.429487 * safezoneW + safezoneX;
 		y = 0.45298 * safezoneH + safezoneY;
 		w = 0.145434 * safezoneW;
 		h = 0.0470196 * safezoneH;
-		action = "closeDialog 0; [player] call pAx_fnc_buyBoxTruck";
+		action = "closeDialog 0; ['lr'] call pAx_fnc_fixVehicle";
 	};
 	class pAx_button4: RscAButton
 	{
 		idc = 2603;
-		text = "Auto Rifleman"; //--- ToDo: Localize;
+		text = "RR Wheel"; //--- ToDo: Localize;
 		x = 0.429487 * safezoneW + safezoneX;
 		y = 0.509404 * safezoneH + safezoneY;
 		w = 0.145434 * safezoneW;
 		h = 0.0470196 * safezoneH;
+		action = "closeDialog 0; ['rr'] call pAx_fnc_fixVehicle";
 	};
 	class pAx_button2: RscAButton
 	{

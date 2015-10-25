@@ -40,6 +40,8 @@ class cfgFunctions
 				class dropCamera {};
 				class pickUpCamera {};
 				class checkVehicle {};
+				class checkPlayerInventory {};
+				class fixVehicle {};
 			};
 	};
 	};
