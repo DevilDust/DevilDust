@@ -144,7 +144,7 @@ class CfgWeapons
 		allowedSlots[] = {901};
 	};
 
-	class nhl_ToolBox_DevilDust : ItemCore
+	class mhl_ToolBox_DevilDust : ItemCore
 		{
 					scope = 2;
             		displayName = "Tool Box";
@@ -159,7 +159,7 @@ class CfgWeapons
             			mass = 8;
             		};
 		};
-		class nhl_ToolBoxNew_DevilDust : ItemCore
+		class mhl_ToolBoxNew_DevilDust : ItemCore
         		{
         					scope = 2;
                     		displayName = "Tool Box new";
