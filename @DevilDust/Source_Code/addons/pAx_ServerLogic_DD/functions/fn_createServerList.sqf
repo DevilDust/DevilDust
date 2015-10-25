@@ -7,7 +7,8 @@ DD_SPAWNLOOT = [
                     "mhl_WaterBottle_DevilDust",
                     "pAx_Camera_DevilDust",
                     "mhl_toolbox_DevilDust",
-                    "mhl_toolboxnew_DevilDust"
+                    "mhl_toolboxnew_DevilDust",
+                    "mhl_TurboBox_DevilDust"
               ];
 
 DD_DRUGUSERLIST = [

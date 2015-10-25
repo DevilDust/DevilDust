@@ -7,7 +7,8 @@ _Til = 41;
 
  {
 
-    systemChat format ['Money: %1 \n\n Hydration: %2 ',[player] call pAx_fnc_getClientMoney,[player] call pAx_fnc_getThirst];
+    systemChat format ['Money: %1 ',[player] call pAx_fnc_getClientMoney];
+    systemChat format ['Hydration: %1 ',[player] call pAx_fnc_getThirst];
 
  };
 

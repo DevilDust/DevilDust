@@ -39,6 +39,7 @@ class cfgFunctions
 				class setRenderTarget {};
 				class dropCamera {};
 				class pickUpCamera {};
+				class checkVehicle {};
 			};
 	};
 	};

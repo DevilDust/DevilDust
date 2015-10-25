@@ -1,6 +1,7 @@
 // Control types
 
 #define CT_MainInventory 9000
+#define TOOLBOX_ID 9001
 
 #define CT_STATIC           0
 #define CT_BUTTON           1

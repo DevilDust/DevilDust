@@ -93,6 +93,101 @@ class pAx_dialog
 };
 
 };
+class pAx_ToolBox_dialog
+{
+	idd= TOOLBOX_ID;
+	movingenable=false;
+
+	class controls
+	{
+
+		////////////////////////////////////////////////////////
+	// GUI EDITOR OUTPUT START (by pAxton, v1.063, #Gijuzi)
+	////////////////////////////////////////////////////////
+
+	class pAx_Frame: RscAFrame
+	{
+		idc = 2800;
+		text = "Load Up"; //--- ToDo: Localize;
+		x = 0.420672 * safezoneW + safezoneX;
+		y = 0.227286 * safezoneH + safezoneY;
+		w = 0.163062 * safezoneW;
+		h = 0.4796 * safezoneH;
+		colorBackground[] = {1,1,1,1};
+		colorActive[] = {1,1,1,1};
+	};
+	class pAx_Button: RscAButton
+	{
+		idc = 2600;
+		text = "LF Wheel"; //--- ToDo: Localize;
+		x = 0.429487 * safezoneW + safezoneX;
+		y = 0.28371 * safezoneH + safezoneY;
+		w = 0.145434 * safezoneW;
+		h = 0.0470196 * safezoneH;
+		action = "closedialog 0;";
+	};
+	class pAx_button1: RscAButton
+	{
+		idc = 2601;
+		text = "RF Wheel"; //--- ToDo: Localize;
+		x = 0.429487 * safezoneW + safezoneX;
+		y = 0.340133 * safezoneH + safezoneY;
+		w = 0.145434 * safezoneW;
+		h = 0.0470196 * safezoneH;
+		action = "closedialog 0;";
+	};
+	class pAx_button3: RscAButton
+	{
+		idc = 2602;
+		text = "Buy Box Truck"; //--- ToDo: Localize;
+		x = 0.429487 * safezoneW + safezoneX;
+		y = 0.45298 * safezoneH + safezoneY;
+		w = 0.145434 * safezoneW;
+		h = 0.0470196 * safezoneH;
+		action = "closeDialog 0; [player] call pAx_fnc_buyBoxTruck";
+	};
+	class pAx_button4: RscAButton
+	{
+		idc = 2603;
+		text = "Auto Rifleman"; //--- ToDo: Localize;
+		x = 0.429487 * safezoneW + safezoneX;
+		y = 0.509404 * safezoneH + safezoneY;
+		w = 0.145434 * safezoneW;
+		h = 0.0470196 * safezoneH;
+	};
+	class pAx_button2: RscAButton
+	{
+		idc = 2604;
+		text = "Asst Auto Rifleman"; //--- ToDo: Localize;
+		x = 0.429487 * safezoneW + safezoneX;
+		y = 0.396557 * safezoneH + safezoneY;
+		w = 0.145434 * safezoneW;
+		h = 0.0470196 * safezoneH;
+	};
+	class pAx_button5: RscAButton
+	{
+		idc = 2605;
+		text = "Designated Marksman"; //--- ToDo: Localize;
+		x = 0.429487 * safezoneW + safezoneX;
+		y = 0.565828 * safezoneH + safezoneY;
+		w = 0.145434 * safezoneW;
+		h = 0.0470196 * safezoneH;
+	};
+	class pAx_button6: RscAButton
+	{
+		idc = 2606;
+		text = "Anti Tank Rifleman"; //--- ToDo: Localize;
+		x = 0.429487 * safezoneW + safezoneX;
+		y = 0.622251 * safezoneH + safezoneY;
+		w = 0.145434 * safezoneW;
+		h = 0.0470196 * safezoneH;
+	};
+	////////////////////////////////////////////////////////
+	// GUI EDITOR OUTPUT END
+	////////////////////////////////////////////////////////
+};
+
+};
 
 ////////////////////////////////////////////////////////
 // GUI EDITOR OUTPUT START (by pAxton, v1.063, #Zotaxo)
