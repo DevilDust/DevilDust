@@ -25,6 +25,6 @@ _y   = 21;
 
     if(_keyDown == _y) then
       {
-        createDialog "pAx_UserAction_Dialog";
+        call pAx_fnc_userActionDiag;
       };
 

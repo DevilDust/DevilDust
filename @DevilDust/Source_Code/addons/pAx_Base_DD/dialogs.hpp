@@ -196,7 +196,7 @@ class pAx_ToolBox_dialog
 };
 class pAx_UserAction_dialog
 {
-	idd= TOOLBOX_ID;
+	idd= 9002;
 	movingenable=false;
 
 	class controls
@@ -226,7 +226,7 @@ class pAx_UserAction_dialog
 		y = 0.28371 * safezoneH + safezoneY;
 		w = 0.145434 * safezoneW;
 		h = 0.0470196 * safezoneH;
-		action = "closeDialog 0; ['lf'] call pAx_fnc_fixVehicle";
+		action = "closeDialog 0; ['drink'] call pAx_fnc_UserActionHandle";
 	};
 	class pAx_button1: RscAButton
 	{
@@ -272,7 +272,7 @@ class pAx_UserAction_dialog
 	class pAx_button5: RscAButton
 	{
 		idc = 3605;
-		text = ""; //--- ToDo: Localize;
+		text = "Camera Setup"; //--- ToDo: Localize;
 		x = 0.429487 * safezoneW + safezoneX;
 		y = 0.565828 * safezoneH + safezoneY;
 		w = 0.145434 * safezoneW;

@@ -42,6 +42,8 @@ class cfgFunctions
 				class checkVehicle {};
 				class checkPlayerInventory {};
 				class fixVehicle {};
+				class userActionHandle {};
+				class userActionDiag {};
 			};
 	};
 	};
