@@ -79,9 +79,25 @@ if ( _RF2Wheel > 0.89 ) then
 //fifth button
 if ( _Engine > 0.89) then
 {
-    ((findDisplay 9001) displayCtrl 2604) ctrlSetTextColor [1,0,0,1];
+    _EngineButton ctrlSetTextColor [1,0,0,1];
 } else {
-            ((findDisplay 9001) displayCtrl 2603) ctrlSetTextColor [_Engine,0.7,0,1];
+            _EngineButton ctrlSetTextColor [_Engine,0.7,0,1];
+       };
+
+//Sixth button
+if ( _Body > 0.89) then
+{
+    _BodyButton ctrlSetTextColor [1,0,0,1];
+} else {
+            _BodyButton ctrlSetTextColor [_Body,0.7,0,1];
+       };
+
+//Seventh button
+if ( _Fuel > 0.89) then
+{
+    _FuelButton ctrlSetTextColor [1,0,0,1];
+} else {
+            _FuelButton ctrlSetTextColor [_Fuel,0.7,0,1];
        };
 
 
