@@ -2,7 +2,8 @@
 
 _keyDown = _this select 1;
 _Til = 41;
-_t = 20;
+_t   = 20;
+_y   = 21;
 
 
 
@@ -21,4 +22,9 @@ _t = 20;
                 systemChat "You need a ToolBox";
            };
     };
+
+    if(_keyDown == _y) then
+      {
+        createDialog "pAx_UserAction_Dialog";
+      };
 

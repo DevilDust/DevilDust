@@ -194,7 +194,107 @@ class pAx_ToolBox_dialog
 };
 
 };
+class pAx_UserAction_dialog
+{
+	idd= TOOLBOX_ID;
+	movingenable=false;
 
+	class controls
+	{
+
+		////////////////////////////////////////////////////////
+	// GUI EDITOR OUTPUT START (by pAxton, v1.063, #Gijuzi)
+	////////////////////////////////////////////////////////
+
+	class pAx_Frame: RscAFrame
+	{
+		idc = 3800;
+		text = "User Action"; //--- ToDo: Localize;
+		x = 0.420672 * safezoneW + safezoneX;
+		y = 0.227286 * safezoneH + safezoneY;
+		w = 0.163062 * safezoneW;
+		h = 0.4796 * safezoneH;
+		colorBackground[] = {1,1,1,1};
+		colorActive[] = {1,1,1,1};
+
+	};
+	class pAx_Button: RscAButton
+	{
+		idc = 3600;
+		text = "Drink"; //--- ToDo: Localize;
+		x = 0.429487 * safezoneW + safezoneX;
+		y = 0.28371 * safezoneH + safezoneY;
+		w = 0.145434 * safezoneW;
+		h = 0.0470196 * safezoneH;
+		action = "closeDialog 0; ['lf'] call pAx_fnc_fixVehicle";
+	};
+	class pAx_button1: RscAButton
+	{
+		idc = 3601;
+		text = "Eat"; //--- ToDo: Localize;
+		x = 0.429487 * safezoneW + safezoneX;
+		y = 0.340133 * safezoneH + safezoneY;
+		w = 0.145434 * safezoneW;
+		h = 0.0470196 * safezoneH;
+		action = "closeDialog 0; ['rf'] call pAx_fnc_fixVehicle";
+	};
+	class pAx_button3: RscAButton
+	{
+		idc = 3602;
+		text = "Build Lab"; //--- ToDo: Localize;
+		x = 0.429487 * safezoneW + safezoneX;
+		y = 0.45298 * safezoneH + safezoneY;
+		w = 0.145434 * safezoneW;
+		h = 0.0470196 * safezoneH;
+		action = "closeDialog 0; ['lr'] call pAx_fnc_fixVehicle";
+	};
+
+	class pAx_button2: RscAButton
+	{
+		idc = 3603;
+		text = "Take Drugs"; //--- ToDo: Localize;
+		x = 0.429487 * safezoneW + safezoneX;
+		y = 0.396557 * safezoneH + safezoneY;
+		w = 0.145434 * safezoneW;
+		h = 0.0470196 * safezoneH;
+		action = "closeDialog 0; ['rr'] call pAx_fnc_fixVehicle";
+	};
+	class pAx_button4: RscAButton
+    	{
+    		idc = 3604;
+    		text = "Upgrade Vehicle"; //--- ToDo: Localize;
+    		x = 0.429487 * safezoneW + safezoneX;
+    		y = 0.509404 * safezoneH + safezoneY;
+    		w = 0.145434 * safezoneW;
+    		h = 0.0470196 * safezoneH;
+    		action = "closeDialog 0; ['eng'] call pAx_fnc_fixVehicle";
+    	};
+	class pAx_button5: RscAButton
+	{
+		idc = 3605;
+		text = ""; //--- ToDo: Localize;
+		x = 0.429487 * safezoneW + safezoneX;
+		y = 0.565828 * safezoneH + safezoneY;
+		w = 0.145434 * safezoneW;
+		h = 0.0470196 * safezoneH;
+		action = "closeDialog 0;";
+	};
+	class pAx_button6: RscAButton
+	{
+		idc = 3606;
+		text = ""; //--- ToDo: Localize;
+		x = 0.429487 * safezoneW + safezoneX;
+		y = 0.622251 * safezoneH + safezoneY;
+		w = 0.145434 * safezoneW;
+		h = 0.0470196 * safezoneH;
+		action = "closeDialog 0;";
+	};
+	////////////////////////////////////////////////////////
+	// GUI EDITOR OUTPUT END
+	////////////////////////////////////////////////////////
+};
+
+};
 ////////////////////////////////////////////////////////
 // GUI EDITOR OUTPUT START (by pAxton, v1.063, #Zotaxo)
 ////////////////////////////////////////////////////////
