@@ -43,5 +43,4 @@ if ((_cThirst > 2) && _hasEffects) then
   };
 _cThirst = _cThirst - 0.1;
 
-systemChat format ["Thirst: %1, HasEffect:%2", _cThirst, _hasEffects];
 _cThirst
