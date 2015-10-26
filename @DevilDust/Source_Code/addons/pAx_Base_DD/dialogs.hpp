@@ -147,42 +147,46 @@ class pAx_ToolBox_dialog
 		h = 0.0470196 * safezoneH;
 		action = "closeDialog 0; ['lr'] call pAx_fnc_fixVehicle";
 	};
-	class pAx_button4: RscAButton
+
+	class pAx_button2: RscAButton
 	{
 		idc = 2603;
 		text = "RR Wheel"; //--- ToDo: Localize;
 		x = 0.429487 * safezoneW + safezoneX;
-		y = 0.509404 * safezoneH + safezoneY;
+		y = 0.396557 * safezoneH + safezoneY;
 		w = 0.145434 * safezoneW;
 		h = 0.0470196 * safezoneH;
 		action = "closeDialog 0; ['rr'] call pAx_fnc_fixVehicle";
 	};
-	class pAx_button2: RscAButton
-	{
-		idc = 2604;
-		text = "Asst Auto Rifleman"; //--- ToDo: Localize;
-		x = 0.429487 * safezoneW + safezoneX;
-		y = 0.396557 * safezoneH + safezoneY;
-		w = 0.145434 * safezoneW;
-		h = 0.0470196 * safezoneH;
-	};
+	class pAx_button4: RscAButton
+    	{
+    		idc = 2604;
+    		text = "Engine"; //--- ToDo: Localize;
+    		x = 0.429487 * safezoneW + safezoneX;
+    		y = 0.509404 * safezoneH + safezoneY;
+    		w = 0.145434 * safezoneW;
+    		h = 0.0470196 * safezoneH;
+    		action = "closeDialog 0; ['eng'] call pAx_fnc_fixVehicle";
+    	};
 	class pAx_button5: RscAButton
 	{
 		idc = 2605;
-		text = "Designated Marksman"; //--- ToDo: Localize;
+		text = "Body"; //--- ToDo: Localize;
 		x = 0.429487 * safezoneW + safezoneX;
 		y = 0.565828 * safezoneH + safezoneY;
 		w = 0.145434 * safezoneW;
 		h = 0.0470196 * safezoneH;
+		action = "closeDialog 0; ['bod'] call pAx_fnc_fixVehicle";
 	};
 	class pAx_button6: RscAButton
 	{
 		idc = 2606;
-		text = "Anti Tank Rifleman"; //--- ToDo: Localize;
+		text = "Fuel Tank"; //--- ToDo: Localize;
 		x = 0.429487 * safezoneW + safezoneX;
 		y = 0.622251 * safezoneH + safezoneY;
 		w = 0.145434 * safezoneW;
 		h = 0.0470196 * safezoneH;
+		action = "closeDialog 0; ['fue'] call pAx_fnc_fixVehicle";
 	};
 	////////////////////////////////////////////////////////
 	// GUI EDITOR OUTPUT END
