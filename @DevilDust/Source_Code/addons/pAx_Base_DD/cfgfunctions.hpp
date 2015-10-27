@@ -10,7 +10,6 @@ class cfgFunctions
 				class hintTest {};
 				class ftl_loadout {};
 				class stlpainKillers{};
-				class spawnBoxTruck {};
 				class KeyPressed {};
 				class MethTruckInit {};
 				class SelChanged {};
@@ -37,6 +36,7 @@ class cfgFunctions
 				file = "pAx_Base_DD\functions\GunStore";
 				class buyPistol {};
                 class buyBoxTruck {};
+                class spawnBoxTruck {};
 
 
 			};
