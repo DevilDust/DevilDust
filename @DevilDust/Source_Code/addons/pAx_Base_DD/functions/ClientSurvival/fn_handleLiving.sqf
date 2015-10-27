@@ -19,12 +19,12 @@ while {alive _player} do
         _Thirst   = [_player] call pAx_fnc_getThirst;
         _Thirst   = [_player, _Thirst, playerWetEffect] call pAx_fnc_handleThirst;
         _null     = [_player,_Thirst] call pAx_fnc_setThirst;
-                    [_player] call pAx_fnc_addDrinkAction;
+       //             [_player] call pAx_fnc_addDrinkAction;
         _status   = [_player] call pAx_fnc_isAlive;
 
          sleep 5;
-        _player removeAction DRINK_AA_ID;
-        _player removeAction SECURITY_AA_ID;
+      //  _player removeAction DRINK_AA_ID;
+      //  _player removeAction SECURITY_AA_ID;
 
      if (!_status) then
         {

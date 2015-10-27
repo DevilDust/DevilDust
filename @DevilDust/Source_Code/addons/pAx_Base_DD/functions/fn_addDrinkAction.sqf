@@ -27,12 +27,11 @@
                                    "",
                                   "('mhl_WaterBottle_DevilDust' in (items player + assignedItems player) && _target == _this)"
                             ];
-    SECURITY_AA_ID = _unit
-                              addAction
-                                                   [
-                                                      "Set Up Camera",
-                                                          "(_this select 0) spawn pAx_fnc_cameraSetup;
-                                                             (_this select 0) removeItem 'pAx_Camera_DevilDust';",
+    SECURITY_AA_ID = _unit addAction
+                                          [
+                                              "Set Up Camera",
+                                                "(_this select 0) spawn pAx_fnc_cameraSetup;
+                                               (_this select 0) removeItem 'pAx_Camera_DevilDust';",
                                                           "",
                                                            0,
                                                        false,

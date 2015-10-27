@@ -21,3 +21,9 @@ _CamSetButton   = ((findDisplay 9002) displayCtrl 3605);
         } else {
                   _DrinkButton ctrlEnable false;
                };
+    if ("pAx_Camera_DevilDust" in (items player)) then
+        {
+            _CamSetButton ctrlEnable true;
+        } else {
+                    _CamSetButton ctrlEnable false;
+               };
