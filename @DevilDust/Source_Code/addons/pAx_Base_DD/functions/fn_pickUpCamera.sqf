@@ -8,4 +8,4 @@
                                 "PickUp",
                                     "(_this select 0) attachTo [(_this select 1),[0, .10, .05], 'lefthand'];
                                         (_this select 0) setDir 180;
-                                            [cCaller] spawn pAx_fnc_dropCamera;"];
+                                            [cCaller] call pAx_fnc_dropCamera;"];
