@@ -24,32 +24,32 @@ for [{_i = 0}, {_i < (count _houseArray)}, { _i = _i + 1}] do {
     _aHouse = _housearray select _i;
 
    _index = floor random count DD_SPAWNLOOT;
-   _loot = "groundweaponholder" createVehicle (_aHouse buildingPos _index);
+   _loot  = "groundweaponholder" createVehicle (_aHouse buildingPos _index);
    _loot2 = "groundweaponholder" createVehicle (_aHouse buildingPos (_index + 1));
 
-   _position = _aHouse buildingPos _index;
+   _position  = _aHouse buildingPos _index;
    _position2 = _aHouse buildingPos _index+1;
-   _loot additemcargoglobal [(DD_SPAWNLOOT call BIS_fnc_selectRandom),1];
-   _loot additemcargoglobal [(DD_SPAWNLOOT call BIS_fnc_selectRandom),1];
+   _loot  additemcargoglobal [(DD_SPAWNLOOT call BIS_fnc_selectRandom),1];
+   _loot  additemcargoglobal [(DD_SPAWNLOOT call BIS_fnc_selectRandom),1];
    _loot2 additemcargoglobal [(DD_SPAWNLOOT call BIS_fnc_selectRandom),1];
    _loot2 additemcargoglobal [(DD_SPAWNLOOT call BIS_fnc_selectRandom),1];
-   _loot setPos [(_position select 0),(_position select 1),((_position select 2)-.14)];
+   _loot  setPos [(_position select 0),(_position select 1),((_position select 2)-.14)];
    _loot2 setPos [(_position2 select 0),(_position2 select 1),((_position2 select 2)-.14)];
 };
 
 
 
-_house = _housearray select floor random count _housearray;
+_house  = _housearray select floor random count _housearray;
 _house2 = _housearray select floor random count _housearray;
 _house3 = _housearray select floor random count _housearray;
-_grp = createGroup west;
+_grp  = createGroup west;
 _grp2 = createGroup west;
 _grp3 = createGroup west;
-_aposinit = position _house;
+_aposinit  = position _house;
 _aposinit2 = position _house2;
 _aposinit3 = position _house3;
 
-_classname = DD_DRUGUSERLIST call BIS_fnc_selectRandom;
+_classname  = DD_DRUGUSERLIST call BIS_fnc_selectRandom;
 _classname2 = DD_DRUGUSERLIST call BIS_fnc_selectRandom;
 _classname3 = DD_DRUGUSERLIST call BIS_fnc_selectRandom;
 
