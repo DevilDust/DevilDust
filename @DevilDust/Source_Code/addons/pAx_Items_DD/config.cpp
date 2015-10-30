@@ -147,7 +147,7 @@ class CfgWeapons
     		{
     					scope = 2;
                 		displayName = "Turbo";
-                		picture = "\pAx_Items_DD\data\UI\mhl_gear_MortonSalt_DevilDust";
+                		picture = "";
                 		model = "\pAx_Items_DD\turboBox";
                 		descriptionShort = "You need tools for this";
                 		class ItemInfo: InventoryWaterBottleItem_Base_F
@@ -161,7 +161,7 @@ class CfgWeapons
 		{
 					scope = 2;
             		displayName = "Tool Box";
-            		picture = "\pAx_Items_DD\data\UI\mhl_gear_MortonSalt_DevilDust";
+            		picture = "";
             		model = "\pAx_Items_DD\mhl_ToolBox";
             		descriptionShort = "I'm Thirsty";
             		interactAction = 2;
@@ -176,7 +176,7 @@ class CfgWeapons
         		{
         					scope = 2;
                     		displayName = "Tool Box new";
-                    		picture = "\pAx_Items_DD\data\UI\mhl_gear_MortonSalt_DevilDust";
+                    		picture = "";
                     		model = "\pAx_Items_DD\mhl_ToolBoxNew";
                     		descriptionShort = "I'm Thirsty";
                     		interactAction = 2;
@@ -191,7 +191,7 @@ class CfgWeapons
     	{
     		scope = 2;
     		displayName = "Water Bottle";
-    		picture = "\pAx_Items_DD\data\UI\mhl_gear_MortonSalt_DevilDust";
+    		picture = "";
     		model = "\A3\Structures_F\Items\Food\BottlePlastic_V1_F.p3d";
     		descriptionShort = "I'm Thirsty";
     		interactAction = 2;

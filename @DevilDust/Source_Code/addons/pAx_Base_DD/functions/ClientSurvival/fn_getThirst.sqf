@@ -6,7 +6,7 @@
 /// #AUTHOR  :  pAxton
 /// #DATE    :  Oct. 4, 2015
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
-_player = _this select 0;
+params ["_player"];
 if (isDedicated) exitWith{};
 if (!local _player) exitWith {};
 _cThirst = _player getVariable "pAx_Thirst";

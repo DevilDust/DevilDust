@@ -9,7 +9,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 scopeName "Main";
 
-_player = _this select 0;
+params ["_player"];
 
 //Variables need to handle client
 playerWetEffect = ppEffectCreate ["wetDistortion", 1];

@@ -220,7 +220,6 @@ class Intro
 					id=5;
 					side="WEST";
 					vehicle="pAx_blu_3_DD";
-					player="PLAYER COMMANDER";
 					leader=1;
 					skill=0.60000002;
 					text="off2_1";

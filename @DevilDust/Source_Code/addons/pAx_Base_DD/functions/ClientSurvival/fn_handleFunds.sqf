@@ -10,11 +10,8 @@
 /// #DATE    : Oct. 3, 2015
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 scopeName "Main";
-//private["_unit","_cMoney","_adjust"];
+params ["_unit","_cMoney","_adjust"];
 
-_unit   = _this select 0;
-_cMoney = _this select 1;
-_adjust = _this select 2;
 _unit = vehicle _unit;
 
 

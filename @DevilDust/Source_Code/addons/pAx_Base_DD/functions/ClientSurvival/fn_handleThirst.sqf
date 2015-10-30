@@ -9,7 +9,7 @@
 /// #DATE    : Oct. 4, 2015
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 disableSerialization;
-//private["_unit","_cnv"];
+params["_unit", "_cThirst"];
 
 _unit           = _this select 0;
 _hasEffects     = false;

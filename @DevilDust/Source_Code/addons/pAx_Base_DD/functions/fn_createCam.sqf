@@ -1,8 +1,8 @@
 
    _camera = _this select 0;
-   _rtt = _this select 1;
+   _rtt    = _this select 1;
 
-   _cam = "camera" camCreate [0,0,0];
+        _cam = "camera" camCreate [0,0,0];
         _cam cameraEffect ["Internal", "Back", _rtt];
 
 
