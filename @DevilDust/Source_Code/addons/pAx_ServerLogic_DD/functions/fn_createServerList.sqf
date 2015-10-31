@@ -8,7 +8,11 @@ DD_SPAWNLOOT   = [
                       "pAx_Camera_DevilDust",
                       "mhl_toolboxnew_DevilDust",
                       "mhl_TurboBox_DevilDust",
-                      "mhl_moronsalt_DevilDust"
+                      "mhl_moronsalt_DevilDust",
+                      "H_ShemagOpen_tan",
+                      "H_TurbanO_blk",
+                      "B_Carryall_khk",
+                      "Item_ItemMap"
                   ];
 
 DD_DRUGUSERLIST = [
