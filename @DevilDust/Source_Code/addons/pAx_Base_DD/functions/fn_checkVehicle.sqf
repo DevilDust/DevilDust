@@ -1,4 +1,11 @@
 disableSerialization;
+if (isNull (findDisplay 9001)) then {
+
+
+
+createDialog "pAx_ToolBox_dialog";
+
+waitUntil {!isNull (findDisplay 9001)};
 
 _veharray = (position player) nearObjects ["Car", 5];
 
@@ -25,9 +32,6 @@ _FuelButton     = ((findDisplay 9001) displayCtrl 2606);
 
 
 
-createDialog "pAx_ToolBox_dialog";
-
-waitUntil {!isNull (findDisplay 9001)};
 
 //first Button
 
@@ -102,3 +106,4 @@ if ( _Fuel > 0.89) then
 
 
 
+} else {};

@@ -1,8 +1,9 @@
 disableSerialization;
 
+if (isNull (findDisplay 9002)) then {
 
 createDialog "pAx_UserAction_Dialog";
-
+waitUntil { !(isNull (findDisplay 9002)) };
 
 
 _DrinkButton    = ((findDisplay 9002) displayCtrl 3600);
@@ -14,7 +15,7 @@ _UpVehButton    = ((findDisplay 9002) displayCtrl 3604);
 _CamSetButton   = ((findDisplay 9002) displayCtrl 3605);
 //_FuelButton   = ((findDisplay 9002) displayCtrl 3606);
 
-
+    _BuildLabButton ctrlEnable (player call pAx_fnc_InventoryContoller);
     if ("mhl_WaterBottle_DevilDust" in (items player)) then
         {
            _DrinkButton ctrlEnable true;
@@ -27,3 +28,4 @@ _CamSetButton   = ((findDisplay 9002) displayCtrl 3605);
         } else {
                     _CamSetButton ctrlEnable false;
                };
+}else {};

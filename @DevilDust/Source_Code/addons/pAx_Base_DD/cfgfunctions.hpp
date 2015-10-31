@@ -55,6 +55,7 @@ class cfgFunctions
                 class getClientMoney {};
                 class setClientMoney {};
                 class InventoryAction {};
+                class InventoryController {};
 
 
         	};

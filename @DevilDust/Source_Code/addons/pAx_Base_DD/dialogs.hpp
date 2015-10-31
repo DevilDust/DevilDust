@@ -252,37 +252,37 @@ class pAx_UserAction_dialog
 	class pAx_button2: RscAButton
 	{
 		idc = 3603;
-		text = "Take Drugs"; //--- ToDo: Localize;
+		text = "Take Drugs";
 		x = 0.429487 * safezoneW + safezoneX;
 		y = 0.396557 * safezoneH + safezoneY;
 		w = 0.145434 * safezoneW;
 		h = 0.0470196 * safezoneH;
-		action = "closeDialog 0; ['rr'] call pAx_fnc_fixVehicle";
+		action = "closeDialog 0; ";//TODO add function
 	};
 	class pAx_button4: RscAButton
     	{
     		idc = 3604;
-    		text = "Upgrade Vehicle"; //--- ToDo: Localize;
+    		text = "Upgrade Vehicle";
     		x = 0.429487 * safezoneW + safezoneX;
     		y = 0.509404 * safezoneH + safezoneY;
     		w = 0.145434 * safezoneW;
     		h = 0.0470196 * safezoneH;
-    		action = "closeDialog 0; ['eng'] call pAx_fnc_fixVehicle";
+    		action = "closeDialog 0;";// TODO Add function
     	};
 	class pAx_button5: RscAButton
 	{
 		idc = 3605;
-		text = "Camera Setup"; //--- ToDo: Localize;
+		text = "Camera Setup";
 		x = 0.429487 * safezoneW + safezoneX;
 		y = 0.565828 * safezoneH + safezoneY;
 		w = 0.145434 * safezoneW;
 		h = 0.0470196 * safezoneH;
-		action = "closeDialog 0;";
+		action = "closeDialog 0; [player] spawn pAx_fnc_cameraSetup";
 	};
 	class pAx_button6: RscAButton
 	{
 		idc = 3606;
-		text = ""; //--- ToDo: Localize;
+		text = "";
 		x = 0.429487 * safezoneW + safezoneX;
 		y = 0.622251 * safezoneH + safezoneY;
 		w = 0.145434 * safezoneW;
