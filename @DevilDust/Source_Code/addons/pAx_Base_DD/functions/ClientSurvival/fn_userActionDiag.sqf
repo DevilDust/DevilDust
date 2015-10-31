@@ -40,7 +40,7 @@ _inventoryItems = ['mhl_MoronSalt_DevilDust','mhl_StarterFluid_DevilDust','mhl_A
             _BuildLabButton ctrlEnable true;
         } else
         {
-            _enableButton ctrlEnable false;
+             _BuildLabButton ctrlEnable false;
         };
 
     if ("mhl_WaterBottle_DevilDust" in (items player)) then

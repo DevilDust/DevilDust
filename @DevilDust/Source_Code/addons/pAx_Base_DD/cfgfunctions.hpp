@@ -56,6 +56,7 @@ class cfgFunctions
                 class setClientMoney {};
                 class InventoryAction {};
                 class InventoryController {};
+                class BuildingLab {};
 
 
         	};

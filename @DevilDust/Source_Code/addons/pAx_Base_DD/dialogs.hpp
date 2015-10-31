@@ -246,7 +246,7 @@ class pAx_UserAction_dialog
 		y = 0.45298 * safezoneH + safezoneY;
 		w = 0.145434 * safezoneW;
 		h = 0.0470196 * safezoneH;
-		action = "closeDialog 0; ['lr'] call pAx_fnc_fixVehicle";
+		action = "closeDialog 0; [player] spawn pAx_fnc_BuildingLab.sqf";
 	};
 
 	class pAx_button2: RscAButton
