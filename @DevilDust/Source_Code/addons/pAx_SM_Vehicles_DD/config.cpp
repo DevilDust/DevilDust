@@ -32,7 +32,7 @@ class CfgPatches
 		units[] = {"C_Hatchback_01_grey_F","C_Hatchback_01_green_F","C_Hatchback_01_blue_F","C_Hatchback_01_yellow_F","C_Hatchback_01_white_F","C_Hatchback_01_black_F","C_Hatchback_01_dark_F","C_Hatchback_01_sport_red_F","C_Hatchback_01_sport_blue_F","C_Hatchback_01_sport_orange_F","C_Hatchback_01_sport_white_F","C_Hatchback_01_sport_grey_F","C_Hatchback_01_sport_green_F","C_Hatchback_01_F","C_Hatchback_01_sport_F","C_Hatchback_01_bluecustom_F","C_Hatchback_01_beigecustom_F"};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"A3_Soft_F"};
+		requiredAddons[] = {"A3_Soft_F", "A3_Soft_F_Offroad_01"};
 	};
 };
 class WeaponFireGun;
@@ -1574,5 +1574,6 @@ class CfgVehicles
 		author = "$STR_A3_Bohemia_Interactive";
 		textureList[] = {"Green",1};
 	};
+
 };
 //};

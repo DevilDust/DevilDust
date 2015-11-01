@@ -11,3 +11,4 @@ _building = _this select 0;
 
 
 _building addAction ["Shop", "createDialog 'pAx_dialog';"];
+

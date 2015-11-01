@@ -236,7 +236,7 @@ class pAx_UserAction_dialog
 		y = 0.340133 * safezoneH + safezoneY;
 		w = 0.145434 * safezoneW;
 		h = 0.0470196 * safezoneH;
-		action = "closeDialog 0; ['rf'] call pAx_fnc_fixVehicle";
+		action = "closeDialog 0; ['eat'] call pAx_fnc_UserActionHandle";
 	};
 	class pAx_button3: RscAButton
 	{
@@ -262,12 +262,12 @@ class pAx_UserAction_dialog
 	class pAx_button4: RscAButton
     	{
     		idc = 3604;
-    		text = "Make Drug Deal";
+    		text = "Setup Drug Deal";
     		x = 0.429487 * safezoneW + safezoneX;
     		y = 0.509404 * safezoneH + safezoneY;
     		w = 0.145434 * safezoneW;
     		h = 0.0470196 * safezoneH;
-    		action = "closeDialog 0; [player] call pAx_fnc_drugDeal";
+    		action = "closeDialog 0; [player] spawn pAx_fnc_drugDeal";
     	};
 	class pAx_button5: RscAButton
 	{
@@ -282,7 +282,7 @@ class pAx_UserAction_dialog
 	class pAx_button6: RscAButton
 	{
 		idc = 3606;
-		text = "";
+		text = "Other Options";
 		x = 0.429487 * safezoneW + safezoneX;
 		y = 0.622251 * safezoneH + safezoneY;
 		w = 0.145434 * safezoneW;

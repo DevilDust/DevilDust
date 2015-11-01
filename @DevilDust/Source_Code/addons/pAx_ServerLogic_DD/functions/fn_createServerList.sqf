@@ -43,6 +43,56 @@ DD_HQLIST       = [
                       "Land_Cargo_Tower_V3_F"
                    ];
 
+DD_BARRACKSLIST  = [
+                        "Land_i_Barracks_V1_F",
+                        "Land_i_Barracks_V2_F",
+                        "Land_u_Barracks_V2_F",
+                        "Land_Cargo_House_V1_F"
+                   ];
+
+DD_MILITEMSLIST  = [
+                        "H_HelmetIA",
+                        "H_HelmetSpecB",
+                        "V_PlateCarrier1_rgr",
+                        "V_BandollierB_khk",
+                        "NVGoggles",
+                        "Rangefinder",
+                        "Binocular",
+                        "ItemMap",
+                        "ItemGPS",
+                        "ItemCompass"
+                     ];
+DD_MILWEAPLIST   = [
+                        "srifle_EBR_F",
+                        "LMG_Mk200_F",
+                        "hgun_ACPC2_F",
+                        "hgun_ACPC2_F",
+                        "hgun_ACPC2_F",
+                        "hgun_Pistol_heavy_02_F",
+                        "arifle_Katiba_F",
+                        "arifle_Mk20_F",
+                        "arifle_MXC_F",
+                        "arifle_TRG20_F",
+                        "hgun_PDW2000_F",
+                        "srifle_DMR_03_F"
+
+                   ];
+DD_MILMAGLIST    = [
+                        "20Rnd_762x51_Mag",
+                        "200Rnd_65x39_cased_Box",
+                        "9Rnd_45ACP_Mag",
+                        "9Rnd_45ACP_Mag",
+                        "9Rnd_45ACP_Mag",
+                        "11Rnd_45ACP_Mag",
+                        "30Rnd_65x39_caseless_green",
+                        "30Rnd_556x45_Stanag",
+                        "30Rnd_65x39_caseless_mag",
+                        "30Rnd_556x45_Stanag",
+                        "30Rnd_9x21_Mag",
+                        "20Rnd_762x51_Mag"
+
+                   ];
+
 DD_VEHLIST       = [
                       "C_Offroad_01_F",
                       "C_Offroad_01_repair_F",
