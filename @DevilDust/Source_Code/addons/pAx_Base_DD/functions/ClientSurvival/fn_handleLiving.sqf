@@ -16,7 +16,8 @@ playerWetEffect = ppEffectCreate ["wetDistortion", 1];
 
 while {alive _player} do
     {
-
+        _rate = rating _player;
+        if (_rate < 0) then { _player addRating 100;}
         _Thirst   = [_player] call pAx_fnc_getThirst;
         _Thirst   = [_player, _Thirst, playerWetEffect] call pAx_fnc_handleThirst;
         _null     = [_player,_Thirst] call pAx_fnc_setThirst;

@@ -60,7 +60,7 @@ sleep 20;
 
    _loot = "groundweaponholder" createVehicle (_spawnPos);
 
-   _loot attachto [_lab, [0,0,0.5]];
+   _loot attachto [_lab, [0,0,1]];
 
    _loot additemcargoglobal ["mhl_baggy_DevilDust",3];
 

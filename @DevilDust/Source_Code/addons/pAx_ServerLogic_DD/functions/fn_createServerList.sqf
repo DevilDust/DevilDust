@@ -93,8 +93,7 @@ DD_MILMAGLIST    = [
                    ];
 
 DD_VEHLIST       = [
-                      "C_Offroad_01_F",
-                      "C_Offroad_01_repair_F",
+
                       "C_Offroad_01_bluecustom_F",
                       "C_Quadbike_01_F",
                       "C_Quadbike_01_white_F",

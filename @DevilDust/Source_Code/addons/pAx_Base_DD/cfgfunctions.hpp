@@ -29,6 +29,7 @@ class cfgFunctions
 				class pickUpCamera {};
 				class checkVehicle {};
 				class fixVehicle {};
+				class turboTruck {};
 
 			};
 		class GunStoreFunctions

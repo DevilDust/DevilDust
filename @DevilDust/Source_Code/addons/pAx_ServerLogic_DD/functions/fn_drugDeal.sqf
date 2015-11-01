@@ -38,3 +38,8 @@ _classname2 createUnit [_civPos, _grp, "this setCaptive true"];
 _wp = _grp addWaypoint [ _posh, 0];
 _wp setWaypointSpeed "NORMAL";
 _wp setWaypointType "MOVE";
+_wp setWaypointTimeout [600,2000,2400];
+_wp1 = _grp addWaypoint [ _civPos, 0];
+_wp1 setWaypointSpeed "FULL";
+_wp1 setWaypointType "MOVE";
+_wp1 setWaypointStatements ["true", "{deleteVehicle _x} forEach ThisList;"];

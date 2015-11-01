@@ -1,6 +1,6 @@
 
 
-_unit = _this;
+_unit = _this select 0;
 
 
   _bb     = "Land_Laptop_unfolded_F" createVehicle position player;

@@ -34,17 +34,17 @@ _lootTypeSelect = [0,1,2];
           _rand = _lootTypeSelect call BIS_fnc_selectRandom;
           if (_rand == 0) then
           {
-             _loot  = "groundweaponholder" createVehicle (_lootPosList call BIS_fnc_selectRandom));
+             _loot  = "groundweaponholder" createVehicle (_lootPosList call BIS_fnc_selectRandom);
              _loot  additemcargoglobal [(DD_MILITEMSLIST call BIS_fnc_selectRandom),1];
           };
           if (_rand == 1) then
           {
-             _loot  = "groundweaponholder" createVehicle (_lootPosList call BIS_fnc_selectRandom));
+             _loot  = "groundweaponholder" createVehicle (_lootPosList call BIS_fnc_selectRandom);
              _loot  addmagazinecargoglobal [(DD_MILMAGLIST call BIS_fnc_selectRandom),3];
           };
           if (_rand == 2) then
           {
-             _loot  = "groundweaponholder" createVehicle (_lootPosList call BIS_fnc_selectRandom));
+             _loot  = "groundweaponholder" createVehicle (_lootPosList call BIS_fnc_selectRandom);
              _loot  addweaponcargoglobal [(DD_MILWEAPLIST call BIS_fnc_selectRandom),1];
           };
 

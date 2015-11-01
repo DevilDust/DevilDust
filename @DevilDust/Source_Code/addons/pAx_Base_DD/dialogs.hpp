@@ -282,12 +282,12 @@ class pAx_UserAction_dialog
 	class pAx_button6: RscAButton
 	{
 		idc = 3606;
-		text = "Other Options";
+		text = "UpGrade Offroad";
 		x = 0.429487 * safezoneW + safezoneX;
 		y = 0.622251 * safezoneH + safezoneY;
 		w = 0.145434 * safezoneW;
 		h = 0.0470196 * safezoneH;
-		action = "closeDialog 0;";
+		action = "closeDialog 0; [player] spawn pAx_fnc_turboTruck";
 	};
 	////////////////////////////////////////////////////////
 	// GUI EDITOR OUTPUT END
