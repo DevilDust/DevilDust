@@ -29,4 +29,4 @@ if ("mhl_Baggy_DevilDust" in (items player + assignedItems player)) then
 
 sleep 10;
 
-_target switchMove "Acts_Abuse_Akhanteros";
+//_target switchMove "Acts_Abuse_Akhanteros";

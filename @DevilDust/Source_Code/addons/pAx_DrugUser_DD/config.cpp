@@ -37,7 +37,7 @@ class CfgVehicles
 		{
 			displayname = "Druggy 1";
 			faction = "DrugUser_Faction";
-			side = 1;
+			side = 0;
 			//hiddenSelectionsTextures[] = {"DrugUser\data\DrugUser_cloth1_nohq.paa"};
 			//SLX_XEH_DISABLED = 0;
 			class EventHandlers
@@ -52,7 +52,7 @@ class CfgVehicles
         		{
         			displayname = "Druggy 2";
         			faction = "DrugUser_Faction";
-                    side = 1;
+                    side = 0;
         			//hiddenSelectionsTextures[] = {"DrugUser\data\DrugUser_cloth1_nohq.paa"};
         			//SLX_XEH_DISABLED = 0;
         			class EventHandlers
@@ -66,7 +66,7 @@ class CfgVehicles
                	{
                 	displayname = "Druggy 3";
                 	faction = "DrugUser_Faction";
-                    side = 1;
+                    side = 0;
                 	//hiddenSelectionsTextures[] = {"DrugUser\data\DrugUser_cloth1_nohq.paa"};
                 	//SLX_XEH_DISABLED = 0;
                 	class EventHandlers

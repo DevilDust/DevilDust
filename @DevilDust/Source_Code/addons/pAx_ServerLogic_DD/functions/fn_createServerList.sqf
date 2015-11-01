@@ -11,8 +11,7 @@ DD_SPAWNLOOT   = [
                       "mhl_moronsalt_DevilDust",
                       "H_ShemagOpen_tan",
                       "H_TurbanO_blk",
-
-                      "Item_ItemMap"
+                      "ItemMap"
                   ];
 
 DD_SPAWNLOOTB = [

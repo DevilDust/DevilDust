@@ -24,11 +24,15 @@ _poss = [_dealHouse] call BIS_fnc_buildingPositions;
 _civSpawnList = _dealPos nearObjects ["house", 2000];
 _civSpawn = _civSpawnList call BIS_fnc_selectRandom;
 _civPos = position _civSpawn;
-_grp  = createGroup west;
+_grp  = createGroup east;
 
 _classname  = DD_DRUGUSERLIST call BIS_fnc_selectRandom;
+_classname1  = DD_DRUGUSERLIST call BIS_fnc_selectRandom;
+_classname2  = DD_DRUGUSERLIST call BIS_fnc_selectRandom;
 
-_classname createUnit [_civPos, _grp, ""];
+_classname createUnit [_civPos, _grp, "this setCaptive true"];
+_classname1 createUnit [_civPos, _grp, "this setCaptive true"];
+_classname2 createUnit [_civPos, _grp, "this setCaptive true"];
 
 
 _wp = _grp addWaypoint [ _posh, 0];
