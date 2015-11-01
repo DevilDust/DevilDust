@@ -246,7 +246,7 @@ class pAx_UserAction_dialog
 		y = 0.45298 * safezoneH + safezoneY;
 		w = 0.145434 * safezoneW;
 		h = 0.0470196 * safezoneH;
-		action = "closeDialog 0; [player] spawn pAx_fnc_BuildingLab.sqf";
+		action = "closeDialog 0; [player] spawn pAx_fnc_BuildingLab";
 	};
 
 	class pAx_button2: RscAButton
@@ -262,12 +262,12 @@ class pAx_UserAction_dialog
 	class pAx_button4: RscAButton
     	{
     		idc = 3604;
-    		text = "Upgrade Vehicle";
+    		text = "Make Drug Deal";
     		x = 0.429487 * safezoneW + safezoneX;
     		y = 0.509404 * safezoneH + safezoneY;
     		w = 0.145434 * safezoneW;
     		h = 0.0470196 * safezoneH;
-    		action = "closeDialog 0;";// TODO Add function
+    		action = "closeDialog 0; [player] call pAx_fnc_drugDeal";
     	};
 	class pAx_button5: RscAButton
 	{

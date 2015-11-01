@@ -11,7 +11,7 @@
  _unit = _this select 0;
  if (isDedicated) exitWith{};
  if (!local _unit) exitWith{};
-
+/*
    DRINK_AA_ID  = _unit
                        addAction
                             [
@@ -39,3 +39,6 @@
                                                           "",
                                                          "('pAx_Camera_DevilDust' in (items player + assignedItems player) && _target == _this)"
                                                    ];
+*/
+
+//_a = (position _unit) nearObjects "pAx_PhoneBooth_DevilDust";

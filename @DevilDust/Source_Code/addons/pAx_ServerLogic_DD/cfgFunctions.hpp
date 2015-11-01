@@ -7,6 +7,7 @@ class cfgFunctions
 			{
 				file = "pAx_ServerLogic_DD\functions";
 				class createServerList { preInit = 1;};
+				class drugDeal {};
 			};
 	};
 	};

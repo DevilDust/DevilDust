@@ -15,15 +15,12 @@
  _radiusToRoads = 500;
 
 
-
-
-
  for [{_i = 0}, {_i < (count DD_HQLIST)}, { _i = _i + 1}] do
     {
-        _build = DD_HQLIST select _i;
-        _buildFound = (_centerMarker) nearObjects [_build , 20000];
-        {hideObjectGlobal _x} forEach _buildFound;
-        {_sb = "pAx_GunShop_DevilDust" createVehicle getPos _x} forEach _buildFound;
+      //  _build = DD_HQLIST select _i;
+       // _buildFound = (_centerMarker) nearObjects [_build , 20000];
+       // {hideObjectGlobal _x} forEach _buildFound;
+       // {_sb = "pAx_GunShop_DevilDust" createVehicle getPos _x} forEach _buildFound;
     };
 
 

@@ -11,9 +11,18 @@ DD_SPAWNLOOT   = [
                       "mhl_moronsalt_DevilDust",
                       "H_ShemagOpen_tan",
                       "H_TurbanO_blk",
-                      "B_Carryall_khk",
+
                       "Item_ItemMap"
                   ];
+
+DD_SPAWNLOOTB = [
+                    "B_Carryall_khk",
+                    "B_OutdoorPack_blk",
+                    "B_OutdoorPack_tan",
+                    "B_OutdoorPack_blu",
+                    "B_HuntingBackpack",
+                    "B_BergenG"
+                ];
 
 DD_DRUGUSERLIST = [
                       "pAx_C_Man_1",

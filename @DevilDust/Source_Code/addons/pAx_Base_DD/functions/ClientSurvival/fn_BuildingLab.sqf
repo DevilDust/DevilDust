@@ -35,7 +35,7 @@ _inventoryItems = ['mhl_MoronSalt_DevilDust','mhl_StarterFluid_DevilDust','mhl_A
         {
 
 _lab = "pAx_Lab_DevilDust_F" createVehicle (position vehicle _unit);
-_lab attachTo [_unit, [0, 0, 0] ];
+_lab attachTo [_unit, [0, 0, 0.5] ];
 _lab hideObject true;
 
 
