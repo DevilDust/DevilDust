@@ -14,11 +14,11 @@
 
 
 _unit = _this select 0 select 0;
-_pos = _this select 1;
+_housearray = _this select 1;
 
-_housearray = (_pos) nearObjects ["House", 700];
+//_housearray = (_pos) nearObjects ["House", 700];
 
-_randArray = [0,0,1,0,0,1,0,0,1];
+_randArray = [0,0,1,0,0,1,0,0,0];
 
 for [{_i = 0}, {_i < (count _houseArray)}, { _i = _i + 1}] do {
     _aHouse = _housearray select _i;
@@ -29,12 +29,12 @@ for [{_i = 0}, {_i < (count _houseArray)}, { _i = _i + 1}] do {
 
    _position  = _aHouse buildingPos _index;
    _position2 = _aHouse buildingPos _index+1;
-   _loot  additemcargoglobal [(DD_SPAWNLOOT call BIS_fnc_selectRandom),1];
+   _loot  addItemCargoGlobal [(DD_SPAWNLOOT call BIS_fnc_selectRandom),1];
    if ((_randArray call BIS_fnc_selectRandom) == 1) then
    {
         _loot addBackpackCargoGlobal [(DD_SPAWNLOOTB call BIS_fnc_selectRandom), 1];
    } else {
-        _loot  additemcargoglobal [(DD_SPAWNLOOT call BIS_fnc_selectRandom),1];
+        _loot  addItemCargoGlobal [(DD_SPAWNLOOT call BIS_fnc_selectRandom),1];
    };
    _loot2 additemcargoglobal [(DD_SPAWNLOOT call BIS_fnc_selectRandom),1];
   if ((_randArray call BIS_fnc_selectRandom) == 1) then

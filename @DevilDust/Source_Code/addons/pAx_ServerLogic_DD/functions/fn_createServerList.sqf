@@ -107,3 +107,13 @@ DD_VEHLIST       = [
                       "C_Kart_01_Fuel_F"
 
                     ];
+
+DD_LOCALIST = (getMarkerPos "a") nearObjects ["house", 1500];
+DD_LOCBLIST = (getMarkerPos "b") nearObjects ["house", 1500];
+DD_LOCCLIST = (getMarkerPos "c") nearObjects ["house", 1500];
+DD_LOCDLIST = (getMarkerPos "d") nearObjects ["house", 1500];
+DD_LOCELIST = (getMarkerPos "e") nearObjects ["house", 1500];
+DD_LOCFLIST = (getMarkerPos "f") nearObjects ["house", 1500];
+DD_LOCGLIST = (getMarkerPos "g") nearObjects ["house", 1500];
+DD_LOCHLIST = (getMarkerPos "h") nearObjects ["house", 1500];
+
