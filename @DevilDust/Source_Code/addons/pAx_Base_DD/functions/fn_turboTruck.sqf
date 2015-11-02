@@ -7,8 +7,8 @@ _veharray = (position _unit) nearObjects ["C_Offroad_01_bluecustom_F", 5];
 _car      = _veharray select 0;
 
 
-if (!(isNil _car)) then
-        {
+
+
             if (_car == "C_Offroad_01_bluecustom_F") then
             {
             if ("mhl_TurboBox_DevilDust" in (items _unit)) then
@@ -23,4 +23,3 @@ if (!(isNil _car)) then
                     };
                 };
             } else { hint "This Turbo only fits on the Offraod";};
-        };

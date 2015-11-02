@@ -11,7 +11,7 @@ _EatButton      = ((findDisplay 9002) displayCtrl 3601);
 _BuildLabButton = ((findDisplay 9002) displayCtrl 3602);
 _DrugsButton    = ((findDisplay 9002) displayCtrl 3603);
 
-_UpVehButton    = ((findDisplay 9002) displayCtrl 3604);
+
 _CamSetButton   = ((findDisplay 9002) displayCtrl 3605);
 //_FuelButton   = ((findDisplay 9002) displayCtrl 3606);
 
