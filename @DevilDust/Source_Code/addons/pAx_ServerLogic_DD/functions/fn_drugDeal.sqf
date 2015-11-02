@@ -1,21 +1,23 @@
 
 _caller = _this select 0;
-_uid = getPlayerUID _caller;
+_uid    = getPlayerUID _caller;
 
-_pos = position _caller;
+_pos       = position _caller;
 _UpButton  = ((findDisplay 9002) displayCtrl 3604);
+
 _UpButton ctrlEnable false;
+
 _dealPosList = _pos nearObjects ["house", 2000];
-_dealHouse = _dealPosList call BIS_fnc_selectRandom;
-_dealPos = position _dealHouse;
+_dealHouse   = _dealPosList call BIS_fnc_selectRandom;
+_dealPos     = position _dealHouse;
 
 _poss = [_dealHouse] call BIS_fnc_buildingPositions;
 
 
- _posh = _poss call BIS_fnc_selectRandom;
-  _marka = "markaDEALHOUSE" + str(_uid);
-   _markera = createMarker [_marka, _posh ];
-  _marka setMarkerType "hd_dot";
+ _posh    = _poss call BIS_fnc_selectRandom;
+ _marka   = "markaDEALHOUSE" + str(_uid);
+ _markera = createMarker [_marka, _posh ];
+ _marka setMarkerType "hd_dot";
 
 
 
@@ -24,15 +26,15 @@ _poss = [_dealHouse] call BIS_fnc_buildingPositions;
 
 
 _civSpawnList = _dealPos nearObjects ["house", 2000];
-_civSpawn = _civSpawnList call BIS_fnc_selectRandom;
-_civPos = position _civSpawn;
-_grp  = createGroup east;
+_civSpawn     = _civSpawnList call BIS_fnc_selectRandom;
+_civPos       = position _civSpawn;
+_grp          = createGroup east;
 
-_classname  = DD_DRUGUSERLIST call BIS_fnc_selectRandom;
+_classname   = DD_DRUGUSERLIST call BIS_fnc_selectRandom;
 _classname1  = DD_DRUGUSERLIST call BIS_fnc_selectRandom;
 _classname2  = DD_DRUGUSERLIST call BIS_fnc_selectRandom;
 
-_classname createUnit [_civPos, _grp, "this setCaptive true"];
+_classname  createUnit [_civPos, _grp, "this setCaptive true"];
 _classname1 createUnit [_civPos, _grp, "this setCaptive true"];
 _classname2 createUnit [_civPos, _grp, "this setCaptive true"];
 

@@ -30,6 +30,7 @@ class cfgFunctions
 				class checkVehicle {};
 				class fixVehicle {};
 				class turboTruck {};
+				class createCam {};
 
 			};
 		class GunStoreFunctions
