@@ -47,4 +47,4 @@ _wp setWaypointStatements ["true", "deleteVehicle _markera;"];
 _wp1 = _grp addWaypoint [ _civPos, 0];
 _wp1 setWaypointSpeed "FULL";
 _wp1 setWaypointType "MOVE";
-_wp1 setWaypointStatements ["true", "{deleteVehicle _x} forEach ThisList; _grp = isNil;_UpButton ctrlEnable true;"];
+_wp1 setWaypointStatements ["true", "{deleteVehicle _x} forEach ThisList; deleteGroup _grp;_UpButton ctrlEnable true;"];
