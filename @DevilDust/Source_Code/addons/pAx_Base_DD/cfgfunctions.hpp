@@ -31,6 +31,7 @@ class cfgFunctions
 				class fixVehicle {};
 				class turboTruck {};
 				class createCam {};
+				class handleHit {};
 
 			};
 		class GunStoreFunctions
@@ -59,6 +60,7 @@ class cfgFunctions
                 class InventoryAction {};
                 class InventoryController {};
                 class BuildingLab {};
+                class handleDamage {};
 
 
         	};
