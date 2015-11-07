@@ -1,4 +1,4 @@
-
+disableSerialization;
 _caller = _this select 0;
 _uid    = getPlayerUID _caller;
 
@@ -25,8 +25,8 @@ _poss = [_dealHouse] call BIS_fnc_buildingPositions;
 
 
 
-_civSpawnList = _dealPos nearObjects ["house", 2000];
-_civSpawn     = _civSpawnList call BIS_fnc_selectRandom;
+
+_civSpawn     = _dealPosList call BIS_fnc_selectRandom;
 _civPos       = position _civSpawn;
 _grp          = createGroup east;
 

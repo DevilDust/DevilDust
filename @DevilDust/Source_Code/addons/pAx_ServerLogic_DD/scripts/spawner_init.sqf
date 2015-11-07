@@ -7,6 +7,16 @@
  /// #DATE    :  Oct. 3, 2015
  ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 if (hasInterface) exitWith {};
+
+DD_LOCALIST = (getMarkerPos "a") nearObjects ["House", 1500];
+DD_LOCBLIST = (getMarkerPos "b") nearObjects ["House", 1500];
+DD_LOCCLIST = (getMarkerPos "c") nearObjects ["House", 1500];
+DD_LOCDLIST = (getMarkerPos "d") nearObjects ["House", 1500];
+DD_LOCELIST = (getMarkerPos "e") nearObjects ["House", 1500];
+DD_LOCFLIST = (getMarkerPos "f") nearObjects ["House", 1500];
+DD_LOCGLIST = (getMarkerPos "g") nearObjects ["House", 1500];
+DD_LOCHLIST = (getMarkerPos "h") nearObjects ["House", 1500];
+
 loca = (getMarkerPos "a");
 spawnTrigger = createTrigger ["emptyDetector", loca, false];
 
