@@ -6,7 +6,7 @@
                                 [
                                    "Drop",
                                        "detach playCam;
-                                            (_this select 1) removeAction (_this select 2); playCam = nil;,
+                                            (_this select 1) removeAction (_this select 2); playCam = nil;",
                                        "",
                                         0,
                                     false,
