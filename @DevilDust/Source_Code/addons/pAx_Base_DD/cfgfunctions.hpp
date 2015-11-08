@@ -10,22 +10,11 @@ class cfgFunctions
 				class hintTest {};
 				class ftl_loadout {};
 				class stlpainKillers{};
-				class buyPistol {};
-				class buyBoxTruck {};
-				class spawnBoxTruck {};
 				class KeyPressed {};
 				class MethTruckInit {};
-				class InventoryAction {};
 				class SelChanged {};
 				class ingredentsTest {};
 				class targetHit {};
-				class handleFunds {};
-				class handleLiving {};
-				class handleThirst {};
-				class getClientMoney {};
-				class setClientMoney {};
-				class getThirst {};
-				class setThirst {};
 				class getAddiction {};
 				class setAddiction {};
 				class getAddicted {};
@@ -35,7 +24,45 @@ class cfgFunctions
 				class handleCivHit {};
 				class findSpawns {};
 				class cameraSetup {};
-				class keyDownEvent {};
+				class setRenderTarget {};
+				class dropCamera {};
+				class pickUpCamera {};
+				class checkVehicle {};
+				class fixVehicle {};
+				class turboTruck {};
+				class createCam {};
+				class handleHit {};
+
 			};
+		class GunStoreFunctions
+			{
+				file = "pAx_Base_DD\functions\GunStore";
+				class buyPistol {};
+                class buyBoxTruck {};
+                class spawnBoxTruck {};
+
+
+			};
+	    class ClientSurvivalFunctions
+        	{
+        		file = "pAx_Base_DD\functions\ClientSurvival";
+				class userActionHandle {};
+                class userActionDiag {};
+                class keyDownEvent {};
+                class checkPlayerInventory {};
+                class getThirst {};
+                class setThirst {};
+                class handleFunds {};
+                class handleLiving {};
+                class handleThirst {};
+                class getClientMoney {};
+                class setClientMoney {};
+                class InventoryAction {};
+                class InventoryController {};
+                class BuildingLab {};
+                class handleDamage {};
+
+
+        	};
 	};
 	};

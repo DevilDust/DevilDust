@@ -9,7 +9,7 @@
 _unit = _this select 0;
 
 
-_unit setCaptive true;
+
 removeHeadgear _unit;
 removeVest _unit;
 removeBackpack _unit;

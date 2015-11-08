@@ -14,11 +14,13 @@ if (!local _unit) exitWith {};
 
 
 waitUntil {(isPlayer _unit)};
-
+enableRadio false;
+enableSentences false;
+_unit setVariable ["BIS_noCoreConversations", true];
 
 	0 setFog [.08,0.03,100];
 
-
+/*
 player addEventHandler ["InventoryOpened", {
     _h = [] spawn {
         disableSerialization;
@@ -36,13 +38,12 @@ player addEventHandler ["InventoryOpened", {
         _statButton buttonSetAction "hintSilent format ['Money: %1 \n\n Hydration: %2 ',[player] call pAx_fnc_getClientMoney, [player] call pAx_fnc_getThirst];";
     };
 }];
+*/
 
 
 _unit setVariable ["pAx_ClientMoney", 0];
- _unit setVariable ["pAx_Thirst", 100];
+_unit setVariable ["pAx_Thirst", 100];
 _unit setVariable ["pAx_Addiction", 0];
 _unit setVariable ["pAx_Addicted", 0];
 [_unit] call pAx_fnc_findSpawns;
 _null = [_unit] ExecVM "\pAx_Base_DD\Client\aliveClient.sqf";
-
-

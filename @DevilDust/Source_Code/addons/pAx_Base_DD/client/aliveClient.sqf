@@ -32,6 +32,7 @@ hintC_arr_EH = findDisplay 72 displayAddEventHandler ["unload", {
 	};
 }];
 };
+	_player removeAllEventHandlers "KeyDown";
 	enableRadio false;
 	0 setFog [100,100,100];
 	[] spawn { (findDisplay 46) displayAddEventHandler["KeyDown","_this call pAx_fnc_keyDownEvent"]; };

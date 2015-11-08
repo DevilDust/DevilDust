@@ -143,11 +143,55 @@ class CfgWeapons
 		type =619;
 		allowedSlots[] = {901};
 	};
+		class mhl_TurboBox_DevilDust : ItemCore
+    		{
+    					scope = 2;
+                		displayName = "Turbo";
+                		picture = "";
+                		model = "\pAx_Items_DD\turboBox";
+                		descriptionShort = "You need tools for this";
+                		class ItemInfo: InventoryWaterBottleItem_Base_F
+
+                		{
+                			mass = 8;
+                		};
+    		};
+
+	class mhl_ToolBox_DevilDust : ItemCore
+		{
+					scope = 2;
+            		displayName = "Tool Box";
+            		picture = "";
+            		model = "\pAx_Items_DD\mhl_ToolBox";
+            		descriptionShort = "I'm Thirsty";
+            		interactAction = 2;
+            		interactText = "DRINK";
+            		class ItemInfo: InventoryWaterBottleItem_Base_F
+
+            		{
+            			mass = 8;
+            		};
+		};
+		class mhl_ToolBoxNew_DevilDust : ItemCore
+        		{
+        					scope = 2;
+                    		displayName = "Tool Box new";
+                    		picture = "";
+                    		model = "\pAx_Items_DD\mhl_ToolBoxNew";
+                    		descriptionShort = "I'm Thirsty";
+                    		interactAction = 2;
+                    		interactText = "DRINK";
+                    		class ItemInfo: InventoryWaterBottleItem_Base_F
+
+                    		{
+                    			mass = 8;
+                    		};
+        		};
 	class mhl_WaterBottle_DevilDust: ItemCore
     	{
     		scope = 2;
     		displayName = "Water Bottle";
-    		picture = "\pAx_Items_DD\data\UI\mhl_gear_MortonSalt_DevilDust";
+    		picture = "";
     		model = "\A3\Structures_F\Items\Food\BottlePlastic_V1_F.p3d";
     		descriptionShort = "I'm Thirsty";
     		interactAction = 2;
@@ -171,16 +215,16 @@ class CfgWeapons
 
         		{
         			mass = 20;
-        			onMouseButtonDblClick = "systemChat 'bg dbl'";
+						class EventHandlers
+                                                		{
+                                                		//	init = "[_this] call pAx_fnc_cameraSetup";
+                    										onMouseButtonDblClick = "systemChat 'bg dbl'";
+
+
+
+                                                		};
         		};
-        		class EventHandlers
-                            		{
-                            		//	init = "[_this] call pAx_fnc_cameraSetup";
 
-
-
-
-                            		};
         	};
 
 	class mhl_MoronSalt_DevilDust: ItemCore

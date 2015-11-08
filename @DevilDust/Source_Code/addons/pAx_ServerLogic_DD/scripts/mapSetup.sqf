@@ -6,7 +6,7 @@
  /// #AUTHOR  :  pAxton
  /// #DATE    :  Oct. 14, 2015
  ////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+_lootTypeSelect = [0,1,2];
 
  _allMarkerPos = _this select 0;
 
@@ -15,41 +15,41 @@
  _radiusToRoads = 500;
 
 
- _milBuildarray = [
-                      "Land_Cargo_HQ_V1_F",
-                      "Land_Cargo_HQ_V2_F",
-                      "Land_Cargo_HQ_V3_F",
-                      "Land_Cargo_Patrol_V1_F",
-                      "Land_Cargo_Patrol_V2_F",
-                      "Land_Cargo_Patrol_V3_F",
-                      "Land_Cargo_Tower_V1_F",
-                      "Land_Cargo_Tower_V2_F",
-                      "Land_Cargo_Tower_V3_F"
-                  ];
-
- _vehArray = [
-                "C_Offroad_01_F",
-                "C_Offroad_01_repair_F",
-                "C_Offroad_01_bluecustom_F",
-                "C_Quadbike_01_F",
-                "C_Quadbike_01_white_F",
-                "C_Hatchback_01_sport_F",
-                "C_Hatchback_01_green_F",
-                "C_Hatchback_01_black_F",
-                "SUV_01_base_grey_F",
-                "SUV_01_base_orange_F",
-                "C_Van_01_transport_F",
-                "C_Van_01_fuel_red_v2_F",
-                "C_Kart_01_Fuel_F"
-
-              ];
-
- for [{_i = 0}, {_i < (count _milBuildarray)}, { _i = _i + 1}] do
+ for [{_i = 0}, {_i < (count DD_HQLIST)}, { _i = _i + 1}] do
     {
-        _build = _milBuildarray select _i;
-        _buildFound = (_centerMarker) nearObjects [_build , 20000];
-        {hideObjectGlobal _x} forEach _buildFound;
+       _build = DD_HQLIST select _i;
+       _buildFound = (_centerMarker) nearObjects [_build , 20000];
+       {hideObjectGlobal _x} forEach _buildFound;
         {_sb = "pAx_GunShop_DevilDust" createVehicle getPos _x} forEach _buildFound;
+    };
+ for [{_i = 0}, {_i < (count DD_BARRACKSLIST)}, { _i = _i + 1}] do
+    {
+       _build = DD_BARRACKSLIST select _i;
+       _buildFound = (_centerMarker) nearObjects [_build , 20000];
+
+
+       {
+        _lootPosList = [ _x] call BIS_fnc_buildingPositions;
+
+          _rand = _lootTypeSelect call BIS_fnc_selectRandom;
+          if (_rand == 0) then
+          {
+             _loot  = "groundweaponholder" createVehicle (_lootPosList call BIS_fnc_selectRandom);
+             _loot  additemcargoglobal [(DD_MILITEMSLIST call BIS_fnc_selectRandom),1];
+          };
+          if (_rand == 1) then
+          {
+             _loot  = "groundweaponholder" createVehicle (_lootPosList call BIS_fnc_selectRandom);
+             _loot  addmagazinecargoglobal [(DD_MILMAGLIST call BIS_fnc_selectRandom),3];
+          };
+          if (_rand == 2) then
+          {
+             _loot  = "groundweaponholder" createVehicle (_lootPosList call BIS_fnc_selectRandom);
+             _loot  addweaponcargoglobal [(DD_MILWEAPLIST call BIS_fnc_selectRandom),1];
+          };
+
+       }forEach _buildFound;
+
     };
 
 
@@ -58,13 +58,13 @@
         _spawn = _allMarkerPos select _i;
         _goodSpotArray = _spawn nearRoads _radiusToRoads;
         _goodSpotSegment = _goodSpotArray select floor random count _goodSpotArray;
-        _veh1 = _vehArray select floor random count _vehArray;
+        _veh1 = DD_VEHLIST select floor random count DD_VEHLIST;
         _veh1 createVehicle position _goodSpotSegment;
          _goodSpotSegment = _goodSpotArray select floor random count _goodSpotArray;
-        _veh2 = _vehArray select floor random count _vehArray;
+        _veh2 = DD_VEHLIST select floor random count DD_VEHLIST;
         _veh2 createVehicle position _goodSpotSegment;
          _goodSpotSegment = _goodSpotArray select floor random count _goodSpotArray;
-        _veh3 = _vehArray select floor random count _vehArray;
+        _veh3 = DD_VEHLIST select floor random count DD_VEHLIST;
         _veh3 createVehicle position _goodSpotSegment;
          _marka = "marka" + str _i;
           _markera = createMarker [_marka, position _goodSpotSegment ];

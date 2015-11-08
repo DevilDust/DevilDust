@@ -9,7 +9,7 @@
 /// #DATE    : Oct. 4, 2015
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 disableSerialization;
-//private["_unit","_cnv"];
+params["_unit", "_cThirst"];
 
 _unit           = _this select 0;
 _hasEffects     = false;
@@ -43,5 +43,4 @@ if ((_cThirst > 2) && _hasEffects) then
   };
 _cThirst = _cThirst - 0.1;
 
-systemChat format ["Thirst: %1, HasEffect:%2", _cThirst, _hasEffects];
 _cThirst
